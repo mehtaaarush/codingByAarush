@@ -4,18 +4,24 @@
 
 `Array` · `Math` · `Dynamic Programming` · `Minimax` · `Game Theory` · `Zero-Sum Game`
 
-## Intuition  
-The problem asks whether Alice can win when both players play optimally.  
-For an even‑length array of piles with an odd total number of stones, a mathematical proof shows that the first player can always force a win.  
-The accepted solution leverages this fact by returning `true` for every input, bypassing any explicit game simulation.
+## Intuition
+In this game the number of piles is even and the total number of stones is odd.  
+Because Alice moves first, she can always force the game into a state where she
+takes the larger of the two remaining piles on each turn.  
+If Alice always chooses a pile that keeps the parity of the remaining piles
+favorable to her, Bob is left with an odd number of stones after Alice’s move,
+while the total is odd.  Consequently Alice can always end up with more stones
+than Bob.  This property is a consequence of the game being zero‑sum with an
+odd total and an even number of piles, so the first player has a forced win.
 
-## Approach  
-The implementation is a single‑line method that ignores the `piles` array and simply returns `true`.  
-No preprocessing, recursion, or dynamic programming is performed.  
-The method relies on the theoretical guarantee that Alice can always win under the given constraints, so the answer is constant for all valid inputs.
+## Approach
+The solution exploits the proven fact that Alice can always win.  
+No simulation, DP, or recursion is required.  
+The implementation simply returns `true`, indicating that Alice wins for every
+valid input.
 
-## Complexity  
-- **Time:** O(1) – the function performs a single return statement.  
+## Complexity
+- **Time:** O(1) – the function performs a single constant‑time operation.  
 - **Space:** O(1) – no additional data structures are allocated.
 
 ## Solution (Java)

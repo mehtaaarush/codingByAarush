@@ -5,21 +5,17 @@
 `Array` · `Math` · `Dynamic Programming` · `Minimax` · `Game Theory` · `Zero-Sum Game`
 
 ## Intuition  
-In this game the number of piles is even and the total number of stones is odd.  
-Because the piles are arranged in a line, Alice can always force a win by
-choosing a strategy that guarantees she ends up with more stones than Bob.
-The classic proof shows that Alice can always pick a pile from the side that
-leads to a larger cumulative sum for her, while Bob’s optimal reply cannot
-overcome this advantage.  Consequently, under optimal play Alice will always
-win regardless of the specific distribution of stones.
+The problem asks whether Alice can win when both players play optimally.  
+For an even‑length array of piles with an odd total number of stones, a mathematical proof shows that the first player can always force a win.  
+The accepted solution leverages this fact by returning `true` for every input, bypassing any explicit game simulation.
 
 ## Approach  
-The implementation exploits this theorem directly: it simply returns `true`
-for every input.  No computation of piles or dynamic programming is performed,
-since the outcome is predetermined by the game’s properties.
+The implementation is a single‑line method that ignores the `piles` array and simply returns `true`.  
+No preprocessing, recursion, or dynamic programming is performed.  
+The method relies on the theoretical guarantee that Alice can always win under the given constraints, so the answer is constant for all valid inputs.
 
 ## Complexity  
-- **Time:** O(1) – the function performs a single constant‑time return.  
+- **Time:** O(1) – the function performs a single return statement.  
 - **Space:** O(1) – no additional data structures are allocated.
 
 ## Solution (Java)
@@ -34,6 +30,6 @@ class Solution {
 
 ---
 
-**Runtime** 0 ms (beats 100.0%) · **Memory** 43 MB (beats 79.0%)
+**Runtime** 0 ms (beats 100.0%) · **Memory** 43 MB (beats 66.7%)
 
 <sub>Synced by AILeetHub on 2026-09-04.</sub>

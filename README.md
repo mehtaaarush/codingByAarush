@@ -1,2 +1,98 @@
 # codingByAarush
 LeetCode solutions, synced automatically by AILeetHub.
+
+<!-- AILEETHUB:START -->
+
+**85 problems solved**
+
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 62  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 22  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+
+| # | Problem | Difficulty | Topic | Language |
+| --- | --- | --- | --- | --- |
+| 1 | [Two Sum](Hash%20Table/0001-two-sum/) | Easy | Hash Table | java |
+| 3 | [Longest Substring Without Repeating Characters](Sliding%20Window/0003-longest-substring-without-repeating-characters/) | Medium | Sliding Window | java |
+| 4 | [Median of Two Sorted Arrays](Divide%20and%20Conquer/0004-median-of-two-sorted-arrays/) | Hard | Divide and Conquer | java |
+| 9 | [Palindrome Number](Math/0009-palindrome-number/) | Easy | Math | java |
+| 11 | [Container With Most Water](Two%20Pointers/0011-container-with-most-water/) | Medium | Two Pointers | java |
+| 13 | [Roman to Integer](Math/0013-roman-to-integer/) | Easy | Math | java |
+| 14 | [Longest Common Prefix](Trie/0014-longest-common-prefix/) | Easy | Trie | java |
+| 15 | [3Sum](Two%20Pointers/0015-3sum/) | Medium | Two Pointers | java |
+| 20 | [Valid Parentheses](Stack/0020-valid-parentheses/) | Easy | Stack | c |
+| 21 | [Merge Two Sorted Lists](Recursion/0021-merge-two-sorted-lists/) | Easy | Recursion | c |
+| 24 | [Swap Nodes in Pairs](Recursion/0024-swap-nodes-in-pairs/) | Medium | Recursion | c |
+| 27 | [Remove Element](Two%20Pointers/0027-remove-element/) | Easy | Two Pointers | java |
+| 28 | [Find the Index of the First Occurrence in a String](Two%20Pointers/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy | Two Pointers | java |
+| 35 | [Search Insert Position](Binary%20Search/0035-search-insert-position/) | Easy | Binary Search | java |
+| 48 | [Rotate Image](Math/0048-rotate-image/) | Medium | Math | java |
+| 49 | [Group Anagrams](Sorting/0049-group-anagrams/) | Medium | Sorting | java |
+| 50 | [Pow(x, n)](Math/0050-powx-n/) | Medium | Math | cpp |
+| 53 | [Maximum Subarray](Dynamic%20Programming/0053-maximum-subarray/) | Medium | Dynamic Programming | java |
+| 54 | [Spiral Matrix](Simulation/0054-spiral-matrix/) | Medium | Simulation | java |
+| 58 | [Length of Last Word](String/0058-length-of-last-word/) | Easy | String | java |
+| 66 | [Plus One](Math/0066-plus-one/) | Easy | Math | java |
+| 70 | [Climbing Stairs](Dynamic%20Programming/0070-climbing-stairs/) | Easy | Dynamic Programming | java |
+| 73 | [Set Matrix Zeroes](Hash%20Table/0073-set-matrix-zeroes/) | Medium | Hash Table | java |
+| 83 | [Remove Duplicates from Sorted List](Linked%20List/0083-remove-duplicates-from-sorted-list/) | Easy | Linked List | c |
+| 88 | [Merge Sorted Array](Two%20Pointers/0088-merge-sorted-array/) | Easy | Two Pointers | java |
+| 121 | [Best Time to Buy and Sell Stock](Dynamic%20Programming/0121-best-time-to-buy-and-sell-stock/) | Easy | Dynamic Programming | java |
+| 125 | [Valid Palindrome](Two%20Pointers/0125-valid-palindrome/) | Easy | Two Pointers | java |
+| 136 | [Single Number](Bit%20Manipulation/0136-single-number/) | Easy | Bit Manipulation | java |
+| 141 | [Linked List Cycle](Two%20Pointers/0141-linked-list-cycle/) | Easy | Two Pointers | c |
+| 155 | [Min Stack](Design/0155-min-stack/) | Medium | Design | java |
+| 160 | [Intersection of Two Linked Lists](Two%20Pointers/0160-intersection-of-two-linked-lists/) | Easy | Two Pointers | c |
+| 167 | [Two Sum II - Input Array Is Sorted](Two%20Pointers/0167-two-sum-ii-input-array-is-sorted/) | Medium | Two Pointers | java |
+| 169 | [Majority Element](Divide%20and%20Conquer/0169-majority-element/) | Easy | Divide and Conquer | java |
+| 175 | [Combine Two Tables](Database/0175-combine-two-tables/) | Easy | Database | mysql |
+| 181 | [Employees Earning More Than Their Managers](Database/0181-employees-earning-more-than-their-managers/) | Easy | Database | mysql |
+| 189 | [Rotate Array](Two%20Pointers/0189-rotate-array/) | Medium | Two Pointers | java |
+| 191 | [Number of 1 Bits](Divide%20and%20Conquer/0191-number-of-1-bits/) | Easy | Divide and Conquer | java |
+| 198 | [House Robber](Dynamic%20Programming/0198-house-robber/) | Medium | Dynamic Programming | java |
+| 203 | [Remove Linked List Elements](Recursion/0203-remove-linked-list-elements/) | Easy | Recursion | c |
+| 206 | [Reverse Linked List](Recursion/0206-reverse-linked-list/) | Easy | Recursion | c |
+| 209 | [Minimum Size Subarray Sum](Sliding%20Window/0209-minimum-size-subarray-sum/) | Medium | Sliding Window | java |
+| 217 | [Contains Duplicate](Sorting/0217-contains-duplicate/) | Easy | Sorting | java |
+| 219 | [Contains Duplicate II](Sliding%20Window/0219-contains-duplicate-ii/) | Easy | Sliding Window | java |
+| 225 | [Implement Stack using Queues](Design/0225-implement-stack-using-queues/) | Easy | Design | c |
+| 231 | [Power of Two](Bit%20Manipulation/0231-power-of-two/) | Easy | Bit Manipulation | java |
+| 232 | [Implement Queue using Stacks](Design/0232-implement-queue-using-stacks/) | Easy | Design | c |
+| 234 | [Palindrome Linked List](Two%20Pointers/0234-palindrome-linked-list/) | Easy | Two Pointers | c |
+| 237 | [Delete Node in a Linked List](Linked%20List/0237-delete-node-in-a-linked-list/) | Medium | Linked List | c |
+| 242 | [Valid Anagram](Sorting/0242-valid-anagram/) | Easy | Sorting | java |
+| 268 | [Missing Number](Binary%20Search/0268-missing-number/) | Easy | Binary Search | java |
+| 283 | [Move Zeroes](Two%20Pointers/0283-move-zeroes/) | Easy | Two Pointers | java |
+| 344 | [Reverse String](Two%20Pointers/0344-reverse-string/) | Easy | Two Pointers | java |
+| 349 | [Intersection of Two Arrays](Two%20Pointers/0349-intersection-of-two-arrays/) | Easy | Two Pointers | java |
+| 387 | [First Unique Character in a String](Counting/0387-first-unique-character-in-a-string/) | Easy | Counting | java |
+| 414 | [Third Maximum Number](Sorting/0414-third-maximum-number/) | Easy | Sorting | java |
+| 424 | [Longest Repeating Character Replacement](Sliding%20Window/0424-longest-repeating-character-replacement/) | Medium | Sliding Window | java |
+| 448 | [Find All Numbers Disappeared in an Array](Hash%20Table/0448-find-all-numbers-disappeared-in-an-array/) | Easy | Hash Table | java |
+| 485 | [Max Consecutive Ones](Array/0485-max-consecutive-ones/) | Easy | Array | java |
+| 509 | [Fibonacci Number](Dynamic%20Programming/0509-fibonacci-number/) | Easy | Dynamic Programming | java |
+| 561 | [Array Partition](Greedy/0561-array-partition/) | Easy | Greedy | java |
+| 584 | [Find Customer Referee](Database/0584-find-customer-referee/) | Easy | Database | mysql |
+| 595 | [Big Countries](Database/0595-big-countries/) | Easy | Database | mysql |
+| 643 | [Maximum Average Subarray I](Sliding%20Window/0643-maximum-average-subarray-i/) | Easy | Sliding Window | java |
+| 704 | [Binary Search](Binary%20Search/0704-binary-search/) | Easy | Binary Search | java |
+| 746 | [Min Cost Climbing Stairs](Dynamic%20Programming/0746-min-cost-climbing-stairs/) | Easy | Dynamic Programming | java |
+| 867 | [Transpose Matrix](Simulation/0867-transpose-matrix/) | Easy | Simulation | java |
+| 876 | [Middle of the Linked List](Two%20Pointers/0876-middle-of-the-linked-list/) | Easy | Two Pointers | c |
+| 989 | [Add to Array-Form of Integer](Math/0989-add-to-array-form-of-integer/) | Easy | Math | java |
+| 1137 | [N-th Tribonacci Number](Dynamic%20Programming/1137-n-th-tribonacci-number/) | Easy | Dynamic Programming | java |
+| 1148 | [Article Views I](Database/1148-article-views-i/) | Easy | Database | mysql |
+| 1290 | [Convert Binary Number in a Linked List to Integer](Math/1290-convert-binary-number-in-a-linked-list-to-integer/) | Easy | Math | c |
+| 1343 | [Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold](Sliding%20Window/1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) | Medium | Sliding Window | java |
+| 1365 | [How Many Numbers Are Smaller Than the Current Number](Sorting/1365-how-many-numbers-are-smaller-than-the-current-number/) | Easy | Sorting | java |
+| 1464 | [Maximum Product of Two Elements in an Array](Heap%20(Priority%20Queue)/1464-maximum-product-of-two-elements-in-an-array/) | Easy | Heap (Priority Queue) | java |
+| 1518 | [Water Bottles](Math/1518-water-bottles/) | Easy | Math | java |
+| 1581 | [Customer Who Visited but Did Not Make Any Transactions](Database/1581-customer-who-visited-but-did-not-make-any-transactions/) | Easy | Database | mysql |
+| 1669 | [Merge In Between Linked Lists](Linked%20List/1669-merge-in-between-linked-lists/) | Medium | Linked List | c |
+| 1683 | [Invalid Tweets](Database/1683-invalid-tweets/) | Easy | Database | mysql |
+| 1721 | [Swapping Nodes in a Linked List](Two%20Pointers/1721-swapping-nodes-in-a-linked-list/) | Medium | Two Pointers | c |
+| 1757 | [Recyclable and Low Fat Products](Database/1757-recyclable-and-low-fat-products/) | Easy | Database | mysql |
+| 1855 | [Maximum Distance Between a Pair of Values](Two%20Pointers/1855-maximum-distance-between-a-pair-of-values/) | Medium | Two Pointers | java |
+| 2078 | [Two Furthest Houses With Different Colors](Greedy/2078-two-furthest-houses-with-different-colors/) | Easy | Greedy | java |
+| 2181 | [Merge Nodes in Between Zeros](Simulation/2181-merge-nodes-in-between-zeros/) | Medium | Simulation | c |
+| 2833 | [Furthest Point From Origin](Counting/2833-furthest-point-from-origin/) | Easy | Counting | java |
+| 2965 | [Find Missing and Repeated Values](Math/2965-find-missing-and-repeated-values/) | Easy | Math | java |
+
+<!-- AILEETHUB:END -->

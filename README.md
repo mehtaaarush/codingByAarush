@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**86 problems solved**
+**87 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 62  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 23  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 63  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 23  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -93,6 +93,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 1855 | [Maximum Distance Between a Pair of Values](Two%20Pointers/1855-maximum-distance-between-a-pair-of-values/) | Medium | Two Pointers | java |
 | 2078 | [Two Furthest Houses With Different Colors](Greedy/2078-two-furthest-houses-with-different-colors/) | Easy | Greedy | java |
 | 2181 | [Merge Nodes in Between Zeros](Simulation/2181-merge-nodes-in-between-zeros/) | Medium | Simulation | c |
+| 2235 | [Add Two Integers](Math/2235-add-two-integers/) | Easy | Math | Java |
 | 2833 | [Furthest Point From Origin](Counting/2833-furthest-point-from-origin/) | Easy | Counting | java |
 | 2965 | [Find Missing and Repeated Values](Math/2965-find-missing-and-repeated-values/) | Easy | Math | java |
 

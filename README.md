@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**88 problems solved**
+**89 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 64  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 23  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 65  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 23  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -94,6 +94,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 2078 | [Two Furthest Houses With Different Colors](Greedy/2078-two-furthest-houses-with-different-colors/) | Easy | Greedy | java |
 | 2181 | [Merge Nodes in Between Zeros](Simulation/2181-merge-nodes-in-between-zeros/) | Medium | Simulation | c |
 | 2235 | [Add Two Integers](Math/2235-add-two-integers/) | Easy | Math | Java |
+| 2651 | [Calculate Delayed Arrival Time](Math/2651-calculate-delayed-arrival-time/) | Easy | Math | Java |
 | 2769 | [Find the Maximum Achievable Number](Math/2769-find-the-maximum-achievable-number/) | Easy | Math | Java |
 | 2833 | [Furthest Point From Origin](Counting/2833-furthest-point-from-origin/) | Easy | Counting | java |
 | 2965 | [Find Missing and Repeated Values](Math/2965-find-missing-and-repeated-values/) | Easy | Math | java |

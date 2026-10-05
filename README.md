@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**97 problems solved**
+**98 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 73  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 23  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 74  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 23  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -92,6 +92,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 1581 | [Customer Who Visited but Did Not Make Any Transactions](Database/1581-customer-who-visited-but-did-not-make-any-transactions/) | Easy | Database | mysql |
 | 1669 | [Merge In Between Linked Lists](Linked%20List/1669-merge-in-between-linked-lists/) | Medium | Linked List | c |
 | 1683 | [Invalid Tweets](Database/1683-invalid-tweets/) | Easy | Database | mysql |
+| 1688 | [Count of Matches in Tournament](Math/1688-count-of-matches-in-tournament/) | Easy | Math | Java |
 | 1721 | [Swapping Nodes in a Linked List](Two%20Pointers/1721-swapping-nodes-in-a-linked-list/) | Medium | Two Pointers | c |
 | 1757 | [Recyclable and Low Fat Products](Database/1757-recyclable-and-low-fat-products/) | Easy | Database | mysql |
 | 1855 | [Maximum Distance Between a Pair of Values](Two%20Pointers/1855-maximum-distance-between-a-pair-of-values/) | Medium | Two Pointers | java |

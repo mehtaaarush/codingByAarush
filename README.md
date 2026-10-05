@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**92 problems solved**
+**93 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 68  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 23  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 69  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 23  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -81,6 +81,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 1137 | [N-th Tribonacci Number](Dynamic%20Programming/1137-n-th-tribonacci-number/) | Easy | Dynamic Programming | java |
 | 1148 | [Article Views I](Database/1148-article-views-i/) | Easy | Database | mysql |
 | 1290 | [Convert Binary Number in a Linked List to Integer](Math/1290-convert-binary-number-in-a-linked-list-to-integer/) | Easy | Math | c |
+| 1342 | [Number of Steps to Reduce a Number to Zero](Bit%20Manipulation/1342-number-of-steps-to-reduce-a-number-to-zero/) | Easy | Bit Manipulation | Java |
 | 1343 | [Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold](Sliding%20Window/1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) | Medium | Sliding Window | java |
 | 1365 | [How Many Numbers Are Smaller Than the Current Number](Sorting/1365-how-many-numbers-are-smaller-than-the-current-number/) | Easy | Sorting | java |
 | 1464 | [Maximum Product of Two Elements in an Array](Heap%20(Priority%20Queue)/1464-maximum-product-of-two-elements-in-an-array/) | Easy | Heap (Priority Queue) | java |

@@ -5,34 +5,31 @@
 `Divide and Conquer` · `Bit Manipulation`
 
 ## Intuition  
-The Hamming weight of an integer is the number of 1‑bits in its binary representation.  
-By repeatedly examining the least significant bit (LSB) and then discarding it, we can count all set bits one by one.  
-The expression `n & 1` isolates the LSB: it yields 1 if that bit is set, otherwise 0.  
-Shifting the integer right by one (`n >> 1`) moves the next bit into the LSB position, preparing it for the next iteration.
+The Hamming weight of an integer is simply the number of `1` bits in its binary representation. By converting the integer to a string of bits, each character can be inspected directly, making the counting straightforward.
 
 ## Approach  
-1. Start with a counter `count = 0`.  
-2. While the integer `n` is not zero:  
-   * Add the value of `n & 1` to `count`.  
-   * Right‑shift `n` by one (`n = n >> 1`).  
-3. When `n` becomes zero, all bits have been processed; return `count`.  
-
-This loop visits each bit of `n` exactly once. Because the input is a 32‑bit signed integer, the loop runs at most 31 times (the most significant bit is always 0 for positive numbers). The algorithm uses only a few integer variables and no additional data structures.
+1. Convert the integer `n` to its binary string using `Integer.toBinaryString(n)`.  
+2. Initialize a counter to zero.  
+3. Iterate over each character of the string.  
+4. If the character is `'1'`, increment the counter.  
+5. After the loop, return the counter value.  
+This method leverages Java’s built‑in conversion to avoid manual bit manipulation, trading a small amount of memory for simplicity.
 
 ## Complexity  
-- **Time:** O(b) where *b* is the number of bits in `n` (≤ 31). Each iteration handles one bit, so the total work is linear in the bit length.  
-- **Space:** O(1). Only a constant amount of extra memory (the counter and the loop variable) is used, independent of input size.
+- **Time:** O(k) – where *k* is the number of bits in `n` (≤ 31), because each bit is examined once.  
+- **Space:** O(k) – the binary string stores one character per bit, so the auxiliary space grows linearly with the bit length.
 
-## Solution (java)
+## Solution (Java)
 
 ```java
 class Solution {
     public int hammingWeight(int n) {
         int count = 0;
-
-        while(n!=0){
-            count+= (n&1);
-            n = n >> 1;
+        String binary = Integer.toBinaryString(n);
+        for(int i = 0 ; i < binary.length() ; i++){
+            if(binary.charAt(i)=='1'){
+                count += 1;
+            }
         }
         return count;
     }
@@ -41,6 +38,6 @@ class Solution {
 
 ---
 
-**Runtime** 0 ms · **Memory** 42.3 MB
+**Runtime** 1 ms (beats 29.9%) · **Memory** 42.6 MB (beats 11.8%)
 
-<sub>Synced by AILeetHub on 2026-05-07.</sub>
+<sub>Synced by AILeetHub on 2026-10-06.</sub>

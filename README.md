@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**99 problems solved**
+**100 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 75  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 23  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 75  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -29,6 +29,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 53 | [Maximum Subarray](Dynamic%20Programming/0053-maximum-subarray/) | Medium | Dynamic Programming | java |
 | 54 | [Spiral Matrix](Simulation/0054-spiral-matrix/) | Medium | Simulation | java |
 | 58 | [Length of Last Word](String/0058-length-of-last-word/) | Easy | String | java |
+| 62 | [Unique Paths](Dynamic%20Programming/0062-unique-paths/) | Medium | Dynamic Programming | Java |
 | 66 | [Plus One](Math/0066-plus-one/) | Easy | Math | java |
 | 70 | [Climbing Stairs](Dynamic%20Programming/0070-climbing-stairs/) | Easy | Dynamic Programming | java |
 | 73 | [Set Matrix Zeroes](Hash%20Table/0073-set-matrix-zeroes/) | Medium | Hash Table | java |

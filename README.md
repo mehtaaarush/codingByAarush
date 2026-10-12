@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**100 problems solved**
+**101 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 75  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 76  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -96,6 +96,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 1688 | [Count of Matches in Tournament](Math/1688-count-of-matches-in-tournament/) | Easy | Math | Java |
 | 1721 | [Swapping Nodes in a Linked List](Two%20Pointers/1721-swapping-nodes-in-a-linked-list/) | Medium | Two Pointers | c |
 | 1757 | [Recyclable and Low Fat Products](Database/1757-recyclable-and-low-fat-products/) | Easy | Database | mysql |
+| 1822 | [Sign of the Product of an Array](Math/1822-sign-of-the-product-of-an-array/) | Easy | Math | Java |
 | 1855 | [Maximum Distance Between a Pair of Values](Two%20Pointers/1855-maximum-distance-between-a-pair-of-values/) | Medium | Two Pointers | java |
 | 2078 | [Two Furthest Houses With Different Colors](Greedy/2078-two-furthest-houses-with-different-colors/) | Easy | Greedy | java |
 | 2119 | [A Number After a Double Reversal](Math/2119-a-number-after-a-double-reversal/) | Easy | Math | Java |

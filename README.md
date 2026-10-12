@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**101 problems solved**
+**102 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 76  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 77  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -64,6 +64,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 344 | [Reverse String](Two%20Pointers/0344-reverse-string/) | Easy | Two Pointers | java |
 | 349 | [Intersection of Two Arrays](Two%20Pointers/0349-intersection-of-two-arrays/) | Easy | Two Pointers | java |
 | 387 | [First Unique Character in a String](Counting/0387-first-unique-character-in-a-string/) | Easy | Counting | java |
+| 412 | [Fizz Buzz](Math/0412-fizz-buzz/) | Easy | Math | Java |
 | 414 | [Third Maximum Number](Sorting/0414-third-maximum-number/) | Easy | Sorting | java |
 | 424 | [Longest Repeating Character Replacement](Sliding%20Window/0424-longest-repeating-character-replacement/) | Medium | Sliding Window | java |
 | 448 | [Find All Numbers Disappeared in an Array](Hash%20Table/0448-find-all-numbers-disappeared-in-an-array/) | Easy | Hash Table | java |

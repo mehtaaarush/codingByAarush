@@ -5,25 +5,14 @@
 `Math` · `Bit Manipulation`
 
 ## Intuition
-Each step either halves the current number when it is even or decrements it by one when it is odd.  
-Halving quickly reduces the magnitude, while a subtraction is only needed to make an odd number even so that the next step can halve it.  
-Thus the process naturally follows the binary representation of the number: every `1` bit causes a subtraction, and each bit position contributes a division.
+The process mimics how a binary representation shrinks: an even number ends with 0, so dividing by 2 simply removes that trailing zero; an odd number ends with 1, so subtracting 1 turns the trailing 1 into 0, making the next step an even division. Repeating these two operations will eventually clear all bits of the integer.
 
 ## Approach
-The algorithm repeatedly applies the rules until the number becomes zero:
-
-1. Initialize a counter `step` to 0.  
-2. While `num > 0`:
-   - If `num` is even (`num % 2 == 0`), divide it by 2.  
-   - Otherwise, subtract 1 from it.  
-   - Increment `step`.  
-3. Return `step`.
-
-The loop directly implements the problem’s definition, performing at most one operation per iteration and updating the counter accordingly.
+We iterate while the current value is greater than zero. For each iteration we check the parity of the number. If it is even, we halve it; if it is odd, we decrement it by one. After performing the operation we increment a counter that tracks the number of steps taken. The loop terminates when the number reaches zero, at which point the counter holds the total steps required.
 
 ## Complexity
-- **Time:** O(log num) – each division by two reduces the number’s magnitude, and the total number of iterations is bounded by twice the number of bits in `num`.  
-- **Space:** O(1) – only a few integer variables are used, independent of the input size.
+- **Time:** O(log num) – each division removes one binary digit, and each subtraction turns an odd digit into an even one, so the total number of iterations is proportional to the number of bits in `num`.
+- **Space:** O(1) – only a few integer variables are used regardless of input size.
 
 ## Solution (Java)
 
@@ -46,6 +35,6 @@ class Solution {
 
 ---
 
-**Runtime** 0 ms (beats 100.0%) · **Memory** 42.3 MB (beats 17.9%)
+**Runtime** 0 ms (beats 100.0%) · **Memory** 42 MB (beats 86.7%)
 
-<sub>Synced by AILeetHub on 2026-10-05.</sub>
+<sub>Synced by AILeetHub on 2026-10-13.</sub>

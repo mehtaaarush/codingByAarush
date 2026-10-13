@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**103 problems solved**
+**104 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 78  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 79  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -94,6 +94,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 1523 | [Count Odd Numbers in an Interval Range](Math/1523-count-odd-numbers-in-an-interval-range/) | Easy | Math | Java |
 | 1581 | [Customer Who Visited but Did Not Make Any Transactions](Database/1581-customer-who-visited-but-did-not-make-any-transactions/) | Easy | Database | mysql |
 | 1669 | [Merge In Between Linked Lists](Linked%20List/1669-merge-in-between-linked-lists/) | Medium | Linked List | c |
+| 1672 | [Richest Customer Wealth](Matrix/1672-richest-customer-wealth/) | Easy | Matrix | Java |
 | 1683 | [Invalid Tweets](Database/1683-invalid-tweets/) | Easy | Database | mysql |
 | 1688 | [Count of Matches in Tournament](Math/1688-count-of-matches-in-tournament/) | Easy | Math | Java |
 | 1721 | [Swapping Nodes in a Linked List](Two%20Pointers/1721-swapping-nodes-in-a-linked-list/) | Medium | Two Pointers | c |

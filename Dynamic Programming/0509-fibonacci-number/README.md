@@ -5,54 +5,37 @@
 `Math` · `Dynamic Programming` · `Recursion` · `Memoization`
 
 ## Intuition
-The Fibonacci sequence is defined recursively, but evaluating it directly leads to repeated work. By storing already computed values we can build each number from the two preceding ones in a single pass, turning the exponential recursion into a linear process.
+The Fibonacci sequence is defined recursively: each term is the sum of the two preceding terms.  
+Because the definition directly mirrors the recurrence relation, a straightforward implementation is to call the same function for `n‑1` and `n‑2` until the base cases `0` and `1` are reached.
 
 ## Approach
-The solution uses bottom‑up dynamic programming.  
-1. Handle the trivial cases `n <= 1` immediately.  
-2. Create an array `dp` of length `n+1`.  
-3. Initialize `dp[0] = 0` and `dp[1] = 1`.  
-4. Iterate from `i = 2` to `n`, setting `dp[i] = dp[i-1] + dp[i-2]`.  
-5. Return `dp[n]` as the result.  
-This method ensures each Fibonacci number is computed once, using only previously computed values.
+The provided solution implements a pure recursive algorithm:
+
+1. If `n` is `0` or `1`, return `n` immediately.  
+2. Otherwise, compute `fib(n‑1)` and `fib(n‑2)` recursively and return their sum.  
+
+No memoization or iterative optimization is used; the function simply follows the mathematical definition.
 
 ## Complexity
-- **Time:** O(n) – a single loop of `n-1` iterations, each doing constant work.  
-- **Space:** O(n) – an array of size `n+1` stores all intermediate Fibonacci numbers.
+- **Time:** O(2ⁿ) – each call spawns two more calls, leading to an exponential number of evaluations.  
+- **Space:** O(n) – recursion depth grows linearly with `n`, storing one call frame per level.
 
-## Solution (java)
+## Solution (Java)
 
 ```java
 class Solution {
     public int fib(int n) {
-    if(n<=1) return n;
-    int[] dp = new int[n+1];
-    dp[0] = 0 ; dp[1] = 1;
-    for(int i = 2 ; i <= n ; i++){
-        dp[i] = dp[i-1] + dp[i-2];
-    }
-    return dp[n];
+        if(n == 0) return 0;
+        if(n == 1) return 1;
+
+        return fib(n-1) + fib(n-2);
+        
     }
 }
-
-// class Solution {
-//     public int fibo(int n,int[] dp) {
-//         if(n<=1) return n;
-//         if(dp[n]!=0) return dp[n];
-//         // int ans = fibo(n-1,dp) + fibo(n-2,dp);
-//         // dp[n] = ans;
-//         return dp[n] = fibo(n-1,dp) + fibo(n-2,dp);
-//     }
-
-//     public int fib(int n) {
-//     int[] dp = new int[n+1];
-//     return fibo(n,dp);
-//     }
-// }
 ```
 
 ---
 
-**Runtime** 0 ms · **Memory** 41.8 MB
+**Runtime** 10 ms (beats 25.8%) · **Memory** 41.6 MB (beats 95.4%)
 
-<sub>Synced by AILeetHub on 2026-05-02.</sub>
+<sub>Synced by AILeetHub on 2026-10-17.</sub>

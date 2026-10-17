@@ -69,7 +69,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 424 | [Longest Repeating Character Replacement](Sliding%20Window/0424-longest-repeating-character-replacement/) | Medium | Sliding Window | java |
 | 448 | [Find All Numbers Disappeared in an Array](Hash%20Table/0448-find-all-numbers-disappeared-in-an-array/) | Easy | Hash Table | java |
 | 485 | [Max Consecutive Ones](Array/0485-max-consecutive-ones/) | Easy | Array | java |
-| 509 | [Fibonacci Number](Dynamic%20Programming/0509-fibonacci-number/) | Easy | Dynamic Programming | java |
+| 509 | [Fibonacci Number](Dynamic%20Programming/0509-fibonacci-number/) | Easy | Dynamic Programming | Java |
 | 561 | [Array Partition](Greedy/0561-array-partition/) | Easy | Greedy | java |
 | 584 | [Find Customer Referee](Database/0584-find-customer-referee/) | Easy | Database | mysql |
 | 595 | [Big Countries](Database/0595-big-countries/) | Easy | Database | mysql |

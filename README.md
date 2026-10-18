@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**109 problems solved**
+**110 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 84  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 85  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -85,6 +85,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 1148 | [Article Views I](Database/1148-article-views-i/) | Easy | Database | mysql |
 | 1281 | [Subtract the Product and Sum of Digits of an Integer](Math/1281-subtract-the-product-and-sum-of-digits-of-an-integer/) | Easy | Math | Java |
 | 1290 | [Convert Binary Number in a Linked List to Integer](Math/1290-convert-binary-number-in-a-linked-list-to-integer/) | Easy | Math | c |
+| 1295 | [Find Numbers with Even Number of Digits](Math/1295-find-numbers-with-even-number-of-digits/) | Easy | Math | Java |
 | 1323 | [Maximum 69 Number](Greedy/1323-maximum-69-number/) | Easy | Greedy | Java |
 | 1342 | [Number of Steps to Reduce a Number to Zero](Bit%20Manipulation/1342-number-of-steps-to-reduce-a-number-to-zero/) | Easy | Bit Manipulation | Java |
 | 1343 | [Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold](Sliding%20Window/1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) | Medium | Sliding Window | java |

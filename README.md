@@ -81,7 +81,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 877 | [Stone Game](Dynamic%20Programming/0877-stone-game/) | Medium | Dynamic Programming | Java |
 | 922 | [Sort Array By Parity II](Two%20Pointers/0922-sort-array-by-parity-ii/) | Easy | Two Pointers | Java |
 | 989 | [Add to Array-Form of Integer](Math/0989-add-to-array-form-of-integer/) | Easy | Math | java |
-| 1137 | [N-th Tribonacci Number](Dynamic%20Programming/1137-n-th-tribonacci-number/) | Easy | Dynamic Programming | java |
+| 1137 | [N-th Tribonacci Number](Dynamic%20Programming/1137-n-th-tribonacci-number/) | Easy | Dynamic Programming | Java |
 | 1148 | [Article Views I](Database/1148-article-views-i/) | Easy | Database | mysql |
 | 1281 | [Subtract the Product and Sum of Digits of an Integer](Math/1281-subtract-the-product-and-sum-of-digits-of-an-integer/) | Easy | Math | Java |
 | 1290 | [Convert Binary Number in a Linked List to Integer](Math/1290-convert-binary-number-in-a-linked-list-to-integer/) | Easy | Math | c |

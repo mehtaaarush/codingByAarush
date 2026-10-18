@@ -4,48 +4,52 @@
 
 `Math` · `Dynamic Programming` · `Memoization`
 
-## Intuition  
-The Tribonacci sequence extends the Fibonacci idea: each term is the sum of the three preceding terms.  
-Because the recurrence only depends on the last three values, we can compute the sequence iteratively while keeping just those three numbers in memory.
+## Intuition
+The Tribonacci sequence extends the Fibonacci idea: each term equals the sum of the three preceding terms.  
+Because the recurrence depends only on the last three values, the entire sequence can be generated iteratively without storing all intermediate results.
 
-## Approach  
-The implementation first handles the trivial cases `n = 0` and `n = 1`.  
-It then initializes three variables to represent `T0`, `T1`, and `T2`.  
-A single loop runs `n` times; in each iteration it calculates the next Tribonacci number `d = a + b + c`, then shifts the window: `a` takes the old `b`, `b` takes the old `c`, and `c` becomes `d`.  
-After the loop finishes, the variable `a` holds the value of `T_{n-1}`; because the loop runs one extra iteration compared to the number of terms needed, `a` actually equals `T_n`.  
-Finally, the method returns `a`.
+## Approach
+1. Handle the trivial cases:  
+   * `n == 0` → 0  
+   * `n == 1` or `n == 2` → 1  
+2. Initialize three variables to represent the last three Tribonacci numbers: `a = T0`, `b = T1`, `c = T2`.  
+3. For every index `i` from 3 up to `n`, compute the next value as `next = a + b + c`.  
+4. Shift the window: set `a = b`, `b = c`, and `c = next`.  
+5. After the loop, `c` holds `Tn`, which is returned.
 
-## Complexity  
-- **Time:** O(n) – a single pass over the range 1…n performs constant‑time work per iteration.  
-- **Space:** O(1) – only three integer variables are maintained regardless of n.
+This method follows the recurrence exactly while keeping only the necessary state.
 
-## Solution (java)
+## Complexity
+- **Time:** O(n) – a single loop of `n‑2` iterations, each performing constant‑time arithmetic.  
+- **Space:** O(1) – only three integer variables are maintained regardless of `n`.
+
+## Solution (Java)
 
 ```java
 class Solution {
     public int tribonacci(int n) {
-        if ( n == 0){
-            return 0;
-        }else if(n == 1){
-            return 1;
-        }
+        
+        if(n == 0) return 0;
+        if(n == 1 || n == 2) return 1;
         int a = 0;
-        int b  = 1;
+        int b = 1;
         int c = 1;
+        
+        for(int i = 3 ; i <= n ; i++){
+            int next = a + b + c;
 
-        for(int i = 1 ; i <=n ; i++){
-            int d = a + b + c;
             a = b;
             b = c;
-            c = d;
+            c = next;
         }
-        return a;
+
+        return c;
     }
 }
 ```
 
 ---
 
-**Runtime** 0 ms · **Memory** 42.1 MB
+**Runtime** 0 ms (beats 100.0%) · **Memory** 41.5 MB (beats 98.6%)
 
-<sub>Synced by AILeetHub on 2025-12-13.</sub>
+<sub>Synced by AILeetHub on 2026-10-18.</sub>

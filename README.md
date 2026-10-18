@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**106 problems solved**
+**107 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 81  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 82  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -107,6 +107,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 2181 | [Merge Nodes in Between Zeros](Simulation/2181-merge-nodes-in-between-zeros/) | Medium | Simulation | c |
 | 2235 | [Add Two Integers](Math/2235-add-two-integers/) | Easy | Math | Java |
 | 2413 | [Smallest Even Multiple](Number%20Theory/2413-smallest-even-multiple/) | Easy | Number Theory | Java |
+| 2485 | [Find the Pivot Integer](Math/2485-find-the-pivot-integer/) | Easy | Math | Java |
 | 2520 | [Count the Digits That Divide a Number](Math/2520-count-the-digits-that-divide-a-number/) | Easy | Math | Java |
 | 2544 | [Alternating Digit Sum](Math/2544-alternating-digit-sum/) | Easy | Math | Java |
 | 2651 | [Calculate Delayed Arrival Time](Math/2651-calculate-delayed-arrival-time/) | Easy | Math | Java |

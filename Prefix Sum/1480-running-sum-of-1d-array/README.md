@@ -4,22 +4,15 @@
 
 `Array` · `Prefix Sum`
 
-## Intuition  
-The running sum at position *i* is simply the sum of all elements from the start up to *i*.  
-If we already know the running sum up to *i‑1*, we can obtain the sum up to *i* by adding the current element to that value. This observation allows us to compute the entire array in a single left‑to‑right pass without any extra storage.
+## Intuition
+The running sum at position *i* is simply the sum of all elements up to that index. Instead of recomputing the sum from scratch for each position, we can build it incrementally: once we know the sum up to *i‑1*, the sum up to *i* is that value plus *nums[i]*. This observation turns the problem into a single left‑to‑right pass.
 
-## Approach  
-1. Let *n* be the length of the input array.  
-2. Starting from index 1, iterate through the array.  
-3. For each index *i*, replace `nums[i]` with `nums[i] + nums[i‑1]`.  
-   - `nums[i‑1]` now holds the running sum up to the previous element, so the addition yields the running sum up to *i*.  
-4. After the loop, `nums` contains the desired running sums, which is returned.
+## Approach
+We keep the input array as the output to avoid extra allocation. Starting from the second element (index 1), we replace each entry with the sum of itself and the previous entry. Concretely, for every `i` from 1 to n‑1 we perform `nums[i] += nums[i‑1]`. After the loop, `nums` contains the desired running sums and is returned.
 
-The algorithm modifies the input array in place, so no additional arrays are created.
-
-## Complexity  
-- **Time:** O(n) – a single traversal of the array.  
-- **Space:** O(1) – only a few integer variables are used, regardless of input size.
+## Complexity
+- **Time:** O(n) – one linear scan over the array.  
+- **Space:** O(1) – updates are done in place; no additional data structures are used.
 
 ## Solution (Java)
 
@@ -39,6 +32,6 @@ class Solution {
 
 ---
 
-**Runtime** 0 ms (beats 100.0%) · **Memory** 44.1 MB (beats 85.5%)
+**Runtime** 0 ms (beats 100.0%) · **Memory** 43.7 MB (beats 96.7%)
 
-<sub>Synced by AILeetHub on 2026-10-12.</sub>
+<sub>Synced by AILeetHub on 2026-10-19.</sub>

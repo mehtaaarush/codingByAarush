@@ -90,7 +90,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 1342 | [Number of Steps to Reduce a Number to Zero](Bit%20Manipulation/1342-number-of-steps-to-reduce-a-number-to-zero/) | Easy | Bit Manipulation | Java |
 | 1343 | [Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold](Sliding%20Window/1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) | Medium | Sliding Window | java |
 | 1365 | [How Many Numbers Are Smaller Than the Current Number](Sorting/1365-how-many-numbers-are-smaller-than-the-current-number/) | Easy | Sorting | java |
-| 1464 | [Maximum Product of Two Elements in an Array](Heap%20(Priority%20Queue)/1464-maximum-product-of-two-elements-in-an-array/) | Easy | Heap (Priority Queue) | java |
+| 1464 | [Maximum Product of Two Elements in an Array](Heap%20(Priority%20Queue)/1464-maximum-product-of-two-elements-in-an-array/) | Easy | Heap (Priority Queue) | Java |
 | 1480 | [Running Sum of 1d Array](Prefix%20Sum/1480-running-sum-of-1d-array/) | Easy | Prefix Sum | Java |
 | 1518 | [Water Bottles](Math/1518-water-bottles/) | Easy | Math | java |
 | 1523 | [Count Odd Numbers in an Interval Range](Math/1523-count-odd-numbers-in-an-interval-range/) | Easy | Math | Java |

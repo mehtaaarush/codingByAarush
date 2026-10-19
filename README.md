@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**110 problems solved**
+**111 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 85  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 86  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -92,6 +92,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 1365 | [How Many Numbers Are Smaller Than the Current Number](Sorting/1365-how-many-numbers-are-smaller-than-the-current-number/) | Easy | Sorting | java |
 | 1464 | [Maximum Product of Two Elements in an Array](Heap%20(Priority%20Queue)/1464-maximum-product-of-two-elements-in-an-array/) | Easy | Heap (Priority Queue) | Java |
 | 1480 | [Running Sum of 1d Array](Prefix%20Sum/1480-running-sum-of-1d-array/) | Easy | Prefix Sum | Java |
+| 1491 | [Average Salary Excluding the Minimum and Maximum Salary](Sorting/1491-average-salary-excluding-the-minimum-and-maximum-salary/) | Easy | Sorting | Java |
 | 1518 | [Water Bottles](Math/1518-water-bottles/) | Easy | Math | java |
 | 1523 | [Count Odd Numbers in an Interval Range](Math/1523-count-odd-numbers-in-an-interval-range/) | Easy | Math | Java |
 | 1581 | [Customer Who Visited but Did Not Make Any Transactions](Database/1581-customer-who-visited-but-did-not-make-any-transactions/) | Easy | Database | mysql |

@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**118 problems solved**
+**119 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 93  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 94  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -120,6 +120,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 2485 | [Find the Pivot Integer](Math/2485-find-the-pivot-integer/) | Easy | Math | Java |
 | 2520 | [Count the Digits That Divide a Number](Math/2520-count-the-digits-that-divide-a-number/) | Easy | Math | Java |
 | 2544 | [Alternating Digit Sum](Math/2544-alternating-digit-sum/) | Easy | Math | Java |
+| 2574 | [Left and Right Sum Differences](Prefix%20Sum/2574-left-and-right-sum-differences/) | Easy | Prefix Sum | Java |
 | 2651 | [Calculate Delayed Arrival Time](Math/2651-calculate-delayed-arrival-time/) | Easy | Math | Java |
 | 2769 | [Find the Maximum Achievable Number](Math/2769-find-the-maximum-achievable-number/) | Easy | Math | Java |
 | 2798 | [Number of Employees Who Met the Target](Array/2798-number-of-employees-who-met-the-target/) | Easy | Array | Java |

@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**115 problems solved**
+**116 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 90  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 91  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -94,6 +94,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 1470 | [Shuffle the Array](Array/1470-shuffle-the-array/) | Easy | Array | Java |
 | 1480 | [Running Sum of 1d Array](Prefix%20Sum/1480-running-sum-of-1d-array/) | Easy | Prefix Sum | Java |
 | 1491 | [Average Salary Excluding the Minimum and Maximum Salary](Sorting/1491-average-salary-excluding-the-minimum-and-maximum-salary/) | Easy | Sorting | Java |
+| 1512 | [Number of Good Pairs](Math/1512-number-of-good-pairs/) | Easy | Math | Java |
 | 1518 | [Water Bottles](Math/1518-water-bottles/) | Easy | Math | java |
 | 1523 | [Count Odd Numbers in an Interval Range](Math/1523-count-odd-numbers-in-an-interval-range/) | Easy | Math | Java |
 | 1581 | [Customer Who Visited but Did Not Make Any Transactions](Database/1581-customer-who-visited-but-did-not-make-any-transactions/) | Easy | Database | mysql |

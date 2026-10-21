@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**121 problems solved**
+**122 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 96  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 97  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -75,6 +75,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 595 | [Big Countries](Database/0595-big-countries/) | Easy | Database | mysql |
 | 643 | [Maximum Average Subarray I](Sliding%20Window/0643-maximum-average-subarray-i/) | Easy | Sliding Window | java |
 | 704 | [Binary Search](Binary%20Search/0704-binary-search/) | Easy | Binary Search | java |
+| 709 | [To Lower Case](String/0709-to-lower-case/) | Easy | String | Java |
 | 746 | [Min Cost Climbing Stairs](Dynamic%20Programming/0746-min-cost-climbing-stairs/) | Easy | Dynamic Programming | java |
 | 867 | [Transpose Matrix](Simulation/0867-transpose-matrix/) | Easy | Simulation | java |
 | 876 | [Middle of the Linked List](Two%20Pointers/0876-middle-of-the-linked-list/) | Easy | Two Pointers | c |

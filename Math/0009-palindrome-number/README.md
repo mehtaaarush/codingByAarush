@@ -4,50 +4,51 @@
 
 `Math`
 
-## Intuition  
-A number is a palindrome if it reads the same forward and backward.  
-Instead of converting the integer to a string, we can reverse its digits mathematically and compare the reversed value to the original. If they match, the number is a palindrome.
+## Intuition
+A palindrome reads the same forward and backward. For an integer, the easiest way to verify this is to examine its decimal representation. By converting the number to a string we can treat each digit as a character and compare mirrored positions.
 
-## Approach  
-1. **Negative check** – Any negative integer has a leading minus sign, so it can never be a palindrome; return `false` immediately.  
-2. **Store original** – Keep a copy of the input (`original`) for later comparison.  
-3. **Reverse the number** – While the number (`x`) is not zero, extract the last digit (`x % 10`), append it to `reverse` (`reverse * 10 + digit`), and drop the last digit (`x / 10`).  
-4. **Compare** – After the loop, if `reverse` equals `original`, the number is a palindrome; otherwise, it is not.  
+## Approach
+1. Convert the integer `x` to a string with `Integer.toString(x)`.  
+2. Set two indices: `left` at the start and `right` at the end of the string.  
+3. While `left < right`, compare the characters at these indices.  
+   * If they differ, the number is not a palindrome → return `false`.  
+   * If they match, increment `left` and decrement `right`.  
+4. If the loop finishes without a mismatch, all mirrored digits matched, so return `true`.
 
-This method uses only integer arithmetic, avoiding string manipulation and extra memory for a character array.
+Negative numbers contain a leading `-` in the string, which will never match a digit, causing an immediate `false`.
 
-## Complexity  
-- **Time:** O(d) – where *d* is the number of digits in `x`; each digit is processed once.  
-- **Space:** O(1) – only a few integer variables are used, independent of input size.
+## Complexity
+- **Time:** O(n) – each digit is inspected at most once.  
+- **Space:** O(n) – the string holds all digits of the input.
 
-## Solution (java)
+## Solution (Java)
 
 ```java
 class Solution {
     public boolean isPalindrome(int x) {
-        if (x<0){
-        return false;
-        }
-        int original = x;
-        int reverse = 0;
 
-        while(x!=0){
-            int digit = x % 10;
-            reverse = reverse *10 + digit;
-            x = x / 10;
+        String s = Integer.toString(x);
+
+        int left = 0;
+        int right = s.length() - 1;
+
+        while (left < right) {
+
+            if (s.charAt(left) == s.charAt(right)) {
+                left++;
+                right--;
+            } else {
+                return false;
+            }
         }
-        if(reverse == original){
-            return true;
-        }
-        else{
-            return false;
-        }
+
+        return true;
     }
 }
 ```
 
 ---
 
-**Runtime** 5 ms · **Memory** 46.1 MB
+**Runtime** 15 ms (beats 6.2%) · **Memory** 45.5 MB (beats 92.1%)
 
-<sub>Synced by AILeetHub on 2025-12-29.</sub>
+<sub>Synced by AILeetHub on 2026-10-22.</sub>

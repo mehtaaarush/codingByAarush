@@ -5,24 +5,16 @@
 `Two Pointers` · `String`
 
 ## Intuition
-Reversing a string in place is equivalent to swapping characters from the two ends of the array until the middle is reached. By moving a left pointer forward and a right pointer backward, each pair of characters can be exchanged with a single temporary variable, ensuring no additional storage beyond that temporary variable.
+Reversing a sequence can be done by exchanging elements that are symmetric around the center. By swapping the first and last characters, then the second and second‑last, and so on, the array is transformed in place without needing extra storage.
 
 ## Approach
-1. Initialize two indices: `left` at the start (0) and `right` at the end (`s.length - 1`).
-2. While `left` is less than `right`:
-   - Store `s[left]` in a temporary variable.
-   - Assign `s[right]` to `s[left]`.
-   - Assign the temporary value to `s[right]`.
-   - Increment `left` and decrement `right`.
-3. When the loop terminates, the array `s` is reversed in place.
-
-This two‑pointer technique guarantees that each element is moved exactly once, and the process stops when the pointers cross, covering all necessary swaps.
+The implementation uses two indices, `left` and `right`. `left` starts at 0 and `right` starts at `s.length - 1`. While `left` is strictly less than `right`, the characters at these positions are swapped using a temporary variable. After each swap, `left` is incremented and `right` decremented, moving the pointers toward the middle. The loop stops when the pointers meet or cross, guaranteeing that every pair of characters has been exchanged exactly once. No additional data structures are created; the only extra space is the temporary variable for the swap.
 
 ## Complexity
-- **Time:** O(n) – each of the n characters is visited a constant number of times.
-- **Space:** O(1) – only a single temporary variable is used regardless of input size.
+- **Time:** O(n) – the loop runs n/2 iterations, each performing a constant‑time swap, where n is the array length.
+- **Space:** O(1) – only a few integer indices and a single temporary character are used, independent of n.
 
-## Solution (java)
+## Solution (Java)
 
 ```java
 class Solution {
@@ -30,14 +22,15 @@ class Solution {
         int left = 0;
         int right = s.length - 1;
 
-        while(left<right){
+        while(left < right){
+            
             char temp = s[left];
             s[left] = s[right];
             s[right] = temp;
-
             left++;
             right--;
-        } 
+            
+        }
         
     }
 }
@@ -45,6 +38,6 @@ class Solution {
 
 ---
 
-**Runtime** 0 ms · **Memory** 48.3 MB
+**Runtime** 1 ms (beats 27.7%) · **Memory** 47.7 MB (beats 97.4%)
 
-<sub>Synced by AILeetHub on 2026-03-03.</sub>
+<sub>Synced by AILeetHub on 2026-10-23.</sub>

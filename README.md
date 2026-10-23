@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**125 problems solved**
+**126 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 100  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 101  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -100,6 +100,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 1512 | [Number of Good Pairs](Math/1512-number-of-good-pairs/) | Easy | Math | Java |
 | 1518 | [Water Bottles](Math/1518-water-bottles/) | Easy | Math | java |
 | 1523 | [Count Odd Numbers in an Interval Range](Math/1523-count-odd-numbers-in-an-interval-range/) | Easy | Math | Java |
+| 1528 | [Shuffle String](String/1528-shuffle-string/) | Easy | String | Java |
 | 1572 | [Matrix Diagonal Sum](Matrix/1572-matrix-diagonal-sum/) | Easy | Matrix | Java |
 | 1581 | [Customer Who Visited but Did Not Make Any Transactions](Database/1581-customer-who-visited-but-did-not-make-any-transactions/) | Easy | Database | mysql |
 | 1669 | [Merge In Between Linked Lists](Linked%20List/1669-merge-in-between-linked-lists/) | Medium | Linked List | c |

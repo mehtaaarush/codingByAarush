@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**124 problems solved**
+**125 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 99  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 100  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -110,6 +110,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 1721 | [Swapping Nodes in a Linked List](Two%20Pointers/1721-swapping-nodes-in-a-linked-list/) | Medium | Two Pointers | c |
 | 1757 | [Recyclable and Low Fat Products](Database/1757-recyclable-and-low-fat-products/) | Easy | Database | mysql |
 | 1822 | [Sign of the Product of an Array](Math/1822-sign-of-the-product-of-an-array/) | Easy | Math | Java |
+| 1832 | [Check if the Sentence Is Pangram](Hash%20Table/1832-check-if-the-sentence-is-pangram/) | Easy | Hash Table | Java |
 | 1855 | [Maximum Distance Between a Pair of Values](Two%20Pointers/1855-maximum-distance-between-a-pair-of-values/) | Medium | Two Pointers | java |
 | 1913 | [Maximum Product Difference Between Two Pairs](Sorting/1913-maximum-product-difference-between-two-pairs/) | Easy | Sorting | Java |
 | 1920 | [Build Array from Permutation](Simulation/1920-build-array-from-permutation/) | Easy | Simulation | Java |

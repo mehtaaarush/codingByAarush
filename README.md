@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**128 problems solved**
+**129 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 103  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 104  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -121,6 +121,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 1979 | [Find Greatest Common Divisor of Array](Number%20Theory/1979-find-greatest-common-divisor-of-array/) | Easy | Number Theory | Java |
 | 2011 | [Final Value of Variable After Performing Operations](Simulation/2011-final-value-of-variable-after-performing-operations/) | Easy | Simulation | Java |
 | 2078 | [Two Furthest Houses With Different Colors](Greedy/2078-two-furthest-houses-with-different-colors/) | Easy | Greedy | java |
+| 2114 | [Maximum Number of Words Found in Sentences](String/2114-maximum-number-of-words-found-in-sentences/) | Easy | String | Java |
 | 2119 | [A Number After a Double Reversal](Math/2119-a-number-after-a-double-reversal/) | Easy | Math | Java |
 | 2181 | [Merge Nodes in Between Zeros](Simulation/2181-merge-nodes-in-between-zeros/) | Medium | Simulation | c |
 | 2235 | [Add Two Integers](Math/2235-add-two-integers/) | Easy | Math | Java |

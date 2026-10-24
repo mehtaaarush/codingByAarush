@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**130 problems solved**
+**131 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 105  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 106  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -104,6 +104,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 1528 | [Shuffle String](String/1528-shuffle-string/) | Easy | String | Java |
 | 1572 | [Matrix Diagonal Sum](Matrix/1572-matrix-diagonal-sum/) | Easy | Matrix | Java |
 | 1581 | [Customer Who Visited but Did Not Make Any Transactions](Database/1581-customer-who-visited-but-did-not-make-any-transactions/) | Easy | Database | mysql |
+| 1662 | [Check If Two String Arrays are Equivalent](String/1662-check-if-two-string-arrays-are-equivalent/) | Easy | String | Java |
 | 1669 | [Merge In Between Linked Lists](Linked%20List/1669-merge-in-between-linked-lists/) | Medium | Linked List | c |
 | 1672 | [Richest Customer Wealth](Matrix/1672-richest-customer-wealth/) | Easy | Matrix | Java |
 | 1683 | [Invalid Tweets](Database/1683-invalid-tweets/) | Easy | Database | mysql |

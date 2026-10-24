@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**131 problems solved**
+**132 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 106  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 107  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -125,6 +125,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 2114 | [Maximum Number of Words Found in Sentences](String/2114-maximum-number-of-words-found-in-sentences/) | Easy | String | Java |
 | 2119 | [A Number After a Double Reversal](Math/2119-a-number-after-a-double-reversal/) | Easy | Math | Java |
 | 2181 | [Merge Nodes in Between Zeros](Simulation/2181-merge-nodes-in-between-zeros/) | Medium | Simulation | c |
+| 2185 | [Counting Words With a Given Prefix](String/2185-counting-words-with-a-given-prefix/) | Easy | String | Java |
 | 2235 | [Add Two Integers](Math/2235-add-two-integers/) | Easy | Math | Java |
 | 2413 | [Smallest Even Multiple](Number%20Theory/2413-smallest-even-multiple/) | Easy | Number Theory | Java |
 | 2469 | [Convert the Temperature](Math/2469-convert-the-temperature/) | Easy | Math | Java |

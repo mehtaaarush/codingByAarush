@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**133 problems solved**
+**134 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 108  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 109  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -84,6 +84,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 877 | [Stone Game](Dynamic%20Programming/0877-stone-game/) | Medium | Dynamic Programming | Java |
 | 922 | [Sort Array By Parity II](Two%20Pointers/0922-sort-array-by-parity-ii/) | Easy | Two Pointers | Java |
 | 989 | [Add to Array-Form of Integer](Math/0989-add-to-array-form-of-integer/) | Easy | Math | java |
+| 1051 | [Height Checker](Sorting/1051-height-checker/) | Easy | Sorting | Java |
 | 1108 | [Defanging an IP Address](String/1108-defanging-an-ip-address/) | Easy | String | Java |
 | 1137 | [N-th Tribonacci Number](Dynamic%20Programming/1137-n-th-tribonacci-number/) | Easy | Dynamic Programming | Java |
 | 1148 | [Article Views I](Database/1148-article-views-i/) | Easy | Database | mysql |

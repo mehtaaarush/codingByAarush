@@ -5,33 +5,34 @@
 `Array` · `Hash Table` · `Sorting`
 
 ## Intuition
-To determine if any value appears twice, we need a fast way to check whether a number has already been seen. A hash‑based set offers constant‑time membership tests, making it ideal for this task.
+A duplicate exists if a number appears more than once while scanning the array.  
+Using a hash‑based set lets us remember every value seen so far and check in constant time whether the current element has already been encountered.
 
 ## Approach
-1. Create an empty `HashSet<Integer>` called `seenNumbers`.  
-2. Iterate over each element `num` in the input array `nums`.  
-3. For each `num`, check `seenNumbers.contains(num)`.  
-   * If it returns `true`, a duplicate has been found; immediately return `true`.  
-   * If it returns `false`, add `num` to the set and continue.  
-4. If the loop completes without finding a duplicate, return `false`.
+1. Create an empty `HashSet<Integer>`.  
+2. Iterate through each element of `nums`.  
+   * If the set already contains the current value, a duplicate is found – return `true`.  
+   * Otherwise, insert the value into the set and continue.  
+3. If the loop finishes without finding a duplicate, return `false`.
 
-This linear scan ensures that as soon as a repeated value is encountered, the function exits early, avoiding unnecessary work.
+The algorithm stops immediately upon detecting the first repeated number, ensuring minimal work.
 
 ## Complexity
-- **Time:** O(n) – each of the n elements is examined once, and set operations are average O(1).  
-- **Space:** O(n) – in the worst case all elements are distinct, so the set stores n integers.
+- **Time:** O(n) – each of the n elements is processed once with O(1) set operations.  
+- **Space:** O(n) – in the worst case all elements are distinct, requiring storage for n integers in the set.
 
-## Solution (java)
+## Solution (Java)
 
 ```java
 class Solution {
     public boolean containsDuplicate(int[] nums) {
-        HashSet<Integer> seenNumbers = new HashSet<>();
-        for(int num:nums){
-            if(seenNumbers.contains(num)){
+        HashSet<Integer> set = new HashSet<>();
+
+        for(int i = 0 ; i < nums.length ; i++){
+            if(set.contains(nums[i])){
                 return true;
             }
-            seenNumbers.add(num);
+            set.add(nums[i]);
         }
         return false;
     }
@@ -40,6 +41,6 @@ class Solution {
 
 ---
 
-**Runtime** 14 ms · **Memory** 93.4 MB
+**Runtime** 19 ms (beats 47.8%) · **Memory** 107.5 MB (beats 70.8%)
 
-<sub>Synced by AILeetHub on 2026-04-23.</sub>
+<sub>Synced by AILeetHub on 2026-10-25.</sub>

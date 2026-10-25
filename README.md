@@ -20,7 +20,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 20 | [Valid Parentheses](Stack/0020-valid-parentheses/) | Easy | Stack | c |
 | 21 | [Merge Two Sorted Lists](Recursion/0021-merge-two-sorted-lists/) | Easy | Recursion | c |
 | 24 | [Swap Nodes in Pairs](Recursion/0024-swap-nodes-in-pairs/) | Medium | Recursion | c |
-| 27 | [Remove Element](Two%20Pointers/0027-remove-element/) | Easy | Two Pointers | java |
+| 27 | [Remove Element](Two%20Pointers/0027-remove-element/) | Easy | Two Pointers | Java |
 | 28 | [Find the Index of the First Occurrence in a String](Two%20Pointers/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy | Two Pointers | java |
 | 35 | [Search Insert Position](Binary%20Search/0035-search-insert-position/) | Easy | Binary Search | java |
 | 48 | [Rotate Image](Math/0048-rotate-image/) | Medium | Math | java |

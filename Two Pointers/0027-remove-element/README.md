@@ -5,41 +5,40 @@
 `Array` · `Two Pointers`
 
 ## Intuition
-
-We only need to keep the elements that are not equal to the target value. Because the order of the remaining elements does not matter, we can overwrite the array as we scan it, moving every valid element to the front. This in‑place strategy guarantees that no extra array is allocated efficiently.
+We only need to keep the elements that differ from the target value.  
+By scanning the array once, we can overwrite unwanted values with the next valid one, effectively compacting the array in place.
 
 ## Approach
-
-Use a single pass with two indices: the loop index `i` scans every element, and a write index `k` tracks the next position to place a non‑`val` element. Whenever `nums[i]` differs from `val`, assign it to `nums[k]` and increment `k`. Elements equal to `val` are simply skipped. After the loop, the first `k` positions contain all required values, and `k` is the new length. The algorithm modifies the array in place and returns `k`.
+Maintain a write pointer `k` that marks the position where the next non‑`val` element should be placed.  
+Iterate over the array with index `i`.  
+- If `nums[i]` is not equal to `val`, copy it to `nums[k]` and increment `k`.  
+- If it equals `val`, simply skip it.  
+After the loop, the first `k` positions contain all elements that are not `val`, in any order. The function returns `k`, the new logical length of the array.
 
 ## Complexity
+- **Time:** O(n) – one pass over the array of length `n`.  
+- **Space:** O(1) – only two integer variables (`i` and `k`) are used, regardless of input size.
 
-- **Time:** O(n) – each element is examined once.  
-- **Space:** O(1) – only a few integer variables are used, regardless of input size.
-
-## Solution (java)
+## Solution (Java)
 
 ```java
 class Solution {
     public int removeElement(int[] nums, int val) {
-        if(nums.length==0) return 0;
-
         int k = 0;
-        for(int i = 0;i<nums.length;i++){
-            if(nums[i]!=val){
+
+        for(int i = 0 ; i < nums.length ; i++){
+            if(nums[i]!= val){
                 nums[k] = nums[i];
-                k++;}
-            
+                k++;
+            }
         }
         return k;
-
-
     }
 }
 ```
 
 ---
 
-**Runtime** 0 ms · **Memory** 43.6 MB
+**Runtime** 0 ms (beats 100.0%) · **Memory** 43 MB (beats 94.8%)
 
-<sub>Synced by AILeetHub on 2026-03-25.</sub>
+<sub>Synced by AILeetHub on 2026-10-25.</sub>

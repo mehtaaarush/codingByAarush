@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**132 problems solved**
+**133 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 107  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 108  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -20,6 +20,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 20 | [Valid Parentheses](Stack/0020-valid-parentheses/) | Easy | Stack | c |
 | 21 | [Merge Two Sorted Lists](Recursion/0021-merge-two-sorted-lists/) | Easy | Recursion | c |
 | 24 | [Swap Nodes in Pairs](Recursion/0024-swap-nodes-in-pairs/) | Medium | Recursion | c |
+| 26 | [Remove Duplicates from Sorted Array](Two%20Pointers/0026-remove-duplicates-from-sorted-array/) | Easy | Two Pointers | Java |
 | 27 | [Remove Element](Two%20Pointers/0027-remove-element/) | Easy | Two Pointers | Java |
 | 28 | [Find the Index of the First Occurrence in a String](Two%20Pointers/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy | Two Pointers | java |
 | 35 | [Search Insert Position](Binary%20Search/0035-search-insert-position/) | Easy | Binary Search | java |

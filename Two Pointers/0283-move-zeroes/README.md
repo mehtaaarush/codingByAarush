@@ -5,45 +5,47 @@
 `Array` · `Two Pointers`
 
 ## Intuition  
-The goal is to keep all non‑zero values in their original order while pushing every zero to the end.  
-If we scan the array from left to right, we can place each non‑zero element at the earliest free position that should contain a non‑zero value.  
-A second pointer can remember that free position; when a non‑zero is found we swap it into place.  
-Because the free position only moves forward, every element is examined once and the relative order of non‑zeros is preserved.
+The goal is to keep the order of all non‑zero values while pushing every zero to the end.  
+If we scan the array once and overwrite each non‑zero element at the next free position, the relative order is preserved automatically.  
+After all non‑zeros are placed, the remaining slots must be filled with zeros.
 
 ## Approach  
-Use two indices:  
-* **fast** – iterates over every element of the array.  
-* **slow** – points to the next position where a non‑zero should be written.  
+1. Maintain a write pointer `k` starting at 0.  
+2. Iterate through the array with index `i`.  
+   * When `nums[i]` is non‑zero, assign it to `nums[k]` and increment `k`.  
+   * Zeros are ignored during this pass, so they are effectively skipped.  
+3. Once the scan finishes, `k` points to the first position that should contain a zero.  
+4. Fill the rest of the array from `k` to the end with zeros.  
 
-For each `fast` index, if `nums[fast]` is non‑zero, swap `nums[fast]` with `nums[slow]` and increment `slow`.  
-When `fast` reaches the end, all non‑zeros occupy indices `0 … slow‑1` and the remaining positions contain zeros.  
-The algorithm performs the swap even when `fast == slow`; this is harmless and keeps the code simple.
+This two‑phase process guarantees that all non‑zeros stay in their original order and all zeros are moved to the tail, all done in place.
 
 ## Complexity  
-- **Time:** O(n) – each element is visited once and a constant amount of work is done per visit.  
-- **Space:** O(1) – only two integer variables are used regardless of input size.
+- **Time:** O(n) – a single pass to copy non‑zeros and a second pass to write zeros.  
+- **Space:** O(1) – only a few integer variables are used, independent of input size.
 
-## Solution (java)
+## Solution (Java)
 
 ```java
 class Solution {
     public void moveZeroes(int[] nums) {
-        int slow = 0;
+        int k = 0;
 
-        for(int fast = 0 ; fast < nums.length; fast++){
-            if(nums[fast]!=0) {
-                int temp = nums[slow];
-                nums[slow] = nums[fast];
-                nums[fast] = temp;
-                slow++;
+        for(int i = 0 ; i < nums.length ; i++){
+            if(nums[i] != 0){
+                nums[k] = nums[i];
+                k++;
             }
         }
-    }
+        while(k < nums.length){
+            nums[k] = 0;
+            k++;
+        }
+    } 
 }
 ```
 
 ---
 
-**Runtime** 2 ms · **Memory** 47.6 MB
+**Runtime** 2 ms (beats 92.3%) · **Memory** 47.3 MB (beats 90.0%)
 
-<sub>Synced by AILeetHub on 2026-04-23.</sub>
+<sub>Synced by AILeetHub on 2026-10-25.</sub>

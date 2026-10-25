@@ -4,50 +4,45 @@
 
 `Array`
 
-## Intuition
-The longest run of 1s can be found by scanning the array once and keeping track of how many 1s have been seen consecutively so far. Whenever a 0 appears the streak breaks, so the counter resets. The maximum value of this counter during the scan is the answer.
+## Intuition  
+The longest run of 1 s can be found by scanning the array once and keeping a running tally of the current streak. Whenever a 0 is encountered the streak ends and must be reset. The maximum streak seen so far is updated during the scan.
 
-## Approach
-Traverse the array from left to right.  
-* If the current element is 1, increment a running counter.  
-* Compare the counter to the best value seen so far; update the best if the counter is larger.  
-* If the element is 0, reset the counter to 0 because any future streak must start after this point.  
-After the loop, the best value holds the length of the longest consecutive sequence of 1s, which is returned.
+## Approach  
+1. Initialize two counters: `count` for the current consecutive 1 s and `maxCount` for the best streak found.  
+2. Iterate through each element of `nums`.  
+   * If the element is 1, increment `count` and update `maxCount` with the larger of the two values.  
+   * If the element is 0, reset `count` to 0 because any future streak must start after this point.  
+3. After the loop, return `maxCount`, which holds the longest run of 1 s.
 
-## Complexity
-- **Time:** O(n) – each element is examined once.  
-- **Space:** O(1) – only two integer variables are used regardless of input size.
+This linear traversal ensures that every element is examined exactly once, and the counters are updated in constant time.
 
-## Solution (java)
+## Complexity  
+- **Time:** O(n) – a single pass over the array of length *n*.  
+- **Space:** O(1) – only two integer variables are used, independent of input size.
+
+## Solution (Java)
 
 ```java
 class Solution {
     public int findMaxConsecutiveOnes(int[] nums) {
-        int result = 0;
         int count = 0;
-        
-        for(int i = 0; i < nums.length; i++){
-            
+        int maxCount = 0;
+
+        for(int i = 0 ; i < nums.length ; i++){
             if(nums[i] == 1){
                 count++;
-                
-                if(count > result){
-                    result = count;
-                }
-            }
-            else{
+                maxCount = Math.max(count , maxCount);
+            }else{
                 count = 0;
             }
         }
-        
-        return result;
+        return maxCount;
     }
 }
-
 ```
 
 ---
 
-**Runtime** 2 ms · **Memory** 52.7 MB
+**Runtime** 3 ms (beats 58.0%) · **Memory** 51.9 MB (beats 94.9%)
 
-<sub>Synced by AILeetHub on 2026-02-15.</sub>
+<sub>Synced by AILeetHub on 2026-10-25.</sub>

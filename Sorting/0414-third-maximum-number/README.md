@@ -4,60 +4,54 @@
 
 `Array` · `Sorting`
 
-## Approach
+## Intuition  
+The third maximum must be one of the largest values in the array.  
+By sorting the array ascending, the largest values appear at the end.  
+Scanning from the end while skipping duplicates lets us count distinct maxima
+without extra data structures.
 
-Accepted easy solution in java.
-Relevant topics: Array, Sorting.
+## Approach  
+1. Sort `nums` in ascending order.  
+2. Initialize a counter `count = 1` (the largest element is the first distinct maximum).  
+3. Iterate from the second‑to‑last element down to the first.  
+   * If the current element differs from the next one, increment `count`.  
+   * When `count` reaches 3, the current element is the third distinct maximum; return it.  
+4. If the loop finishes without reaching a count of 3, the array contains fewer than three distinct values; return the last element (the maximum).
 
-## Complexity
+The algorithm relies on the sorted order to identify distinct values by simple equality checks and uses a single pass after sorting.
 
-- **Time:** _not analysed_
-- **Space:** _not analysed_
+## Complexity  
+- **Time:** O(n log n) – sorting dominates the runtime.  
+- **Space:** O(1) – the sort is in‑place and only a few variables are used.
 
-## Solution (java)
+## Solution (Java)
 
 ```java
 class Solution {
     public int thirdMax(int[] nums) {
-        
-        Long first = null;
-        Long second = null;
-        Long third = null;
-        
-        for(int num : nums) {
-            
-            long n = num;
-            
-            if(first != null && n == first ||
-               second != null && n == second ||
-               third != null && n == third) {
-                continue;
+
+        Arrays.sort(nums);
+
+        int count = 1;
+
+        for (int i = nums.length - 2; i >= 0; i--) {
+
+            if (nums[i] != nums[i + 1]) {
+                count++;
             }
-            
-            if(first == null || n > first) {
-                third = second;
-                second = first;
-                first = n;
-            }
-            
-            else if(second == null || n > second) {
-                third = second;
-                second = n;
-            }
-            
-            else if(third == null || n > third) {
-                third = n;
+
+            if (count == 3) {
+                return nums[i];
             }
         }
-        
-        return third == null ? first.intValue() : third.intValue();
+
+        return nums[nums.length - 1];
     }
 }
-
 ```
 
 ---
 
-**Runtime** 3 ms · **Memory** 45.2 MB
+**Runtime** 7 ms (beats 30.5%) · **Memory** 44.8 MB (beats 50.2%)
 
-<sub>Synced by AILeetHub on 2026-02-14.</sub>
+<sub>Synced by AILeetHub on 2026-10-26.</sub>

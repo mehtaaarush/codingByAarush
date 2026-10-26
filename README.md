@@ -66,7 +66,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 349 | [Intersection of Two Arrays](Two%20Pointers/0349-intersection-of-two-arrays/) | Easy | Two Pointers | java |
 | 387 | [First Unique Character in a String](Counting/0387-first-unique-character-in-a-string/) | Easy | Counting | java |
 | 412 | [Fizz Buzz](Math/0412-fizz-buzz/) | Easy | Math | Java |
-| 414 | [Third Maximum Number](Sorting/0414-third-maximum-number/) | Easy | Sorting | java |
+| 414 | [Third Maximum Number](Sorting/0414-third-maximum-number/) | Easy | Sorting | Java |
 | 424 | [Longest Repeating Character Replacement](Sliding%20Window/0424-longest-repeating-character-replacement/) | Medium | Sliding Window | java |
 | 448 | [Find All Numbers Disappeared in an Array](Hash%20Table/0448-find-all-numbers-disappeared-in-an-array/) | Easy | Hash Table | java |
 | 485 | [Max Consecutive Ones](Array/0485-max-consecutive-ones/) | Easy | Array | Java |

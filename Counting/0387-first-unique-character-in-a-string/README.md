@@ -5,48 +5,51 @@
 `Hash Table` · `String` · `Queue` · `Counting`
 
 ## Intuition  
-The first unique character is the one that appears exactly once and is positioned earliest in the string.  
-By counting how many times each character occurs we can later check the order of appearance to find the first one whose count is one.
+To know whether a character is unique we must know how many times it appears in the string.  
+The first non‑repeating character is the one whose total count is one and that occurs earliest in the original order.
 
 ## Approach  
-1. **Count frequencies** – Traverse the string once, inserting each character into a `LinkedHashMap`.  
-   *The map’s key is the character, and the value is its occurrence count.*  
-   `LinkedHashMap` preserves insertion order, which is the order of first appearance in the string.
+1. **Count frequencies** – Iterate once over the string, storing each character’s occurrence count in a `HashMap<Character,Integer>`.  
+2. **Find the first unique** – Iterate a second time over the string; for each character, check its stored count. The first character whose count equals one is the answer, and its index is returned immediately.  
+3. If no character has a count of one, return `-1`.
 
-2. **Find the first unique** – Iterate over the string again.  
-   For each character, look up its count in the map.  
-   The first character whose count equals `1` is the answer; return its index.  
-   If no such character exists, return `-1`.
-
-This two‑pass strategy guarantees that the earliest unique character is found without scanning the string multiple times for each character.
+This two‑pass strategy guarantees that we preserve the original order while still having constant‑time lookups for frequencies.
 
 ## Complexity  
 - **Time:** O(n) – two linear scans over the string of length *n*.  
-- **Space:** O(k) – the map stores at most *k* distinct characters (k ≤ 26 for lowercase letters), so the extra space is bounded by the alphabet size.
+- **Space:** O(1) – the map holds at most 26 entries for lowercase English letters, a constant amount of extra space.
 
-## Solution (java)
+## Solution (Java)
 
 ```java
 class Solution {
     public int firstUniqChar(String s) {
-    LinkedHashMap <Character,Integer> map = new LinkedHashMap<>();
+        HashMap<Character , Integer> map = new HashMap<>();
 
-    for(int i = 0;i<s.length();i++){
-        char c = s.charAt(i);
-        map.put(c,map.getOrDefault(c,0)+1);
-    }
+        for(int i = 0 ; i < s.length() ; i++){
+            char ch = s.charAt(i);
+            
+            map.put(ch , map.getOrDefault(ch , 0) + 1);
+        }
 
-    for(int i = 0;i<s.length();i++){
-        if(map.get(s.charAt(i))==1){
-        return i;
-    }       }
-    return -1;
+        for(int i = 0 ; i < s.length() ; i++){
+            char ch = s.charAt(i);
+
+            if(map.get(ch) == 1){
+                return i;
+            }
+        }
+        return -1; 
+        
+        
+
+        
     }
 }
 ```
 
 ---
 
-**Runtime** 34 ms · **Memory** 47.1 MB
+**Runtime** 36 ms (beats 10.5%) · **Memory** 46.6 MB (beats 89.3%)
 
-<sub>Synced by AILeetHub on 2026-03-03.</sub>
+<sub>Synced by AILeetHub on 2026-10-28.</sub>

@@ -64,7 +64,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 283 | [Move Zeroes](Two%20Pointers/0283-move-zeroes/) | Easy | Two Pointers | Java |
 | 344 | [Reverse String](Two%20Pointers/0344-reverse-string/) | Easy | Two Pointers | Java |
 | 349 | [Intersection of Two Arrays](Two%20Pointers/0349-intersection-of-two-arrays/) | Easy | Two Pointers | java |
-| 387 | [First Unique Character in a String](Counting/0387-first-unique-character-in-a-string/) | Easy | Counting | java |
+| 387 | [First Unique Character in a String](Counting/0387-first-unique-character-in-a-string/) | Easy | Counting | Java |
 | 412 | [Fizz Buzz](Math/0412-fizz-buzz/) | Easy | Math | Java |
 | 414 | [Third Maximum Number](Sorting/0414-third-maximum-number/) | Easy | Sorting | Java |
 | 424 | [Longest Repeating Character Replacement](Sliding%20Window/0424-longest-repeating-character-replacement/) | Medium | Sliding Window | java |

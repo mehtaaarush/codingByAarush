@@ -35,7 +35,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 70 | [Climbing Stairs](Dynamic%20Programming/0070-climbing-stairs/) | Easy | Dynamic Programming | java |
 | 73 | [Set Matrix Zeroes](Hash%20Table/0073-set-matrix-zeroes/) | Medium | Hash Table | java |
 | 83 | [Remove Duplicates from Sorted List](Linked%20List/0083-remove-duplicates-from-sorted-list/) | Easy | Linked List | c |
-| 88 | [Merge Sorted Array](Two%20Pointers/0088-merge-sorted-array/) | Easy | Two Pointers | java |
+| 88 | [Merge Sorted Array](Two%20Pointers/0088-merge-sorted-array/) | Easy | Two Pointers | Java |
 | 121 | [Best Time to Buy and Sell Stock](Dynamic%20Programming/0121-best-time-to-buy-and-sell-stock/) | Easy | Dynamic Programming | java |
 | 125 | [Valid Palindrome](Two%20Pointers/0125-valid-palindrome/) | Easy | Two Pointers | java |
 | 136 | [Single Number](Bit%20Manipulation/0136-single-number/) | Easy | Bit Manipulation | java |

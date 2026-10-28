@@ -31,7 +31,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 54 | [Spiral Matrix](Simulation/0054-spiral-matrix/) | Medium | Simulation | java |
 | 58 | [Length of Last Word](String/0058-length-of-last-word/) | Easy | String | java |
 | 62 | [Unique Paths](Dynamic%20Programming/0062-unique-paths/) | Medium | Dynamic Programming | Java |
-| 66 | [Plus One](Math/0066-plus-one/) | Easy | Math | java |
+| 66 | [Plus One](Math/0066-plus-one/) | Easy | Math | Java |
 | 70 | [Climbing Stairs](Dynamic%20Programming/0070-climbing-stairs/) | Easy | Dynamic Programming | java |
 | 73 | [Set Matrix Zeroes](Hash%20Table/0073-set-matrix-zeroes/) | Medium | Hash Table | java |
 | 83 | [Remove Duplicates from Sorted List](Linked%20List/0083-remove-duplicates-from-sorted-list/) | Easy | Linked List | c |

@@ -5,24 +5,20 @@
 `Hash Table` · `String` · `Sorting`
 
 ## Intuition  
-Two strings are anagrams when they contain exactly the same characters with the same multiplicities.  
-Because the input alphabet is limited to the 26 lowercase English letters, we can keep a fixed‑size counter for each letter instead of using a hash map or sorting.
+Two strings are anagrams when they contain exactly the same characters with the same multiplicities. Counting how many times each character appears in both strings and comparing those counts is a direct way to verify this property.
 
 ## Approach  
-1. **Length check** – If the two strings differ in length, they cannot be anagrams, so return `false` immediately.  
-2. **Counting** – Create an integer array of size 26 (`count`).  
-   Iterate over the indices of the strings once.  
-   * For the character from the first string, increment the corresponding counter: `count[s.charAt(i) - 'a']++`.  
-   * For the character from the second string, decrement the corresponding counter: `count[t.charAt(i) - 'a']--`.  
-   This simultaneous update ensures that matching characters cancel each other out.  
-3. **Verification** – After the loop, scan the `count` array. If any element is non‑zero, the strings differ in character composition, so return `false`.  
-4. **Result** – If all counters are zero, the strings are anagrams; return `true`.
+1. **Length check** – If the strings differ in length, they cannot be anagrams.  
+2. **Build frequency map** – Iterate over the first string, using a hash map to record how many times each character occurs.  
+3. **Reduce counts with the second string** – Scan the second string, decrementing the corresponding count in the map for each character.  
+4. **Validate** – After both passes, iterate over the map’s values; if any value is non‑zero, the strings differ. If all values are zero, the strings are anagrams.  
+The use of `getOrDefault` handles characters that appear only in one string by treating missing entries as zero.
 
 ## Complexity  
-- **Time:** O(n) – one pass over the strings and a constant‑size scan, where n is the string length.  
-- **Space:** O(1) – the 26‑element array is fixed and independent of input size.
+- **Time:** O(n) – each string is traversed once, and the final map scan is proportional to the number of distinct characters.  
+- **Space:** O(k) – the map stores at most one entry per distinct character (k ≤ 26 for lowercase letters, larger for Unicode).
 
-## Solution (java)
+## Solution (Java)
 
 ```java
 class Solution {
@@ -30,14 +26,25 @@ class Solution {
         if(s.length() != t.length()){
             return false;
         }
-        int[] count = new int[26];
 
-        for(int i = 0 ; i < s.length(); i++){
-            count[s.charAt(i) - 'a']++;
-            count[t.charAt(i) - 'a']--;
+        HashMap<Character , Integer> map = new HashMap<>();
+
+        for(int i = 0 ; i < s.length() ; i++){
+            char ch = s.charAt(i);
+
+            map.put(ch , map.getOrDefault(ch , 0) + 1);
         }
-        for(int c : count){
-            if(c!=0) return false;
+
+        for(int i = 0 ; i < t.length() ; i++){
+            char ch = t.charAt(i);
+
+            map.put(ch , map.getOrDefault(ch , 0) - 1);
+        }
+
+        for(int value : map.values()){
+            if(value != 0){
+                return false;
+            }
         }
         return true;
     }
@@ -46,6 +53,6 @@ class Solution {
 
 ---
 
-**Runtime** 6 ms · **Memory** 44.2 MB
+**Runtime** 16 ms (beats 22.2%) · **Memory** 46 MB (beats 44.2%)
 
-<sub>Synced by AILeetHub on 2025-11-10.</sub>
+<sub>Synced by AILeetHub on 2026-10-28.</sub>

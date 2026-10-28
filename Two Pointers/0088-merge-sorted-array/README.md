@@ -5,21 +5,20 @@
 `Array` · `Two Pointers` · `Sorting`
 
 ## Intuition  
-The goal is to merge two sorted arrays into the first one without allocating extra space for the result.  
-The provided solution sidesteps the two‑pointer in‑place strategy by creating a temporary array that holds all meaningful elements, then sorting the final array.
+The goal is to combine two sorted arrays into one sorted array stored in `nums1`.  
+Instead of merging element‑by‑element, the solution first gathers all relevant values into a temporary array, then relies on a built‑in sort to order them.
 
 ## Approach  
-1. Allocate a new array `arr` of size `m + n`.  
-2. Copy the first `m` non‑zero elements from `nums1` into `arr`.  
+1. Allocate a new array `arr` of length `m + n`.  
+2. Copy the first `m` elements of `nums1` into `arr`.  
 3. Append all `n` elements of `nums2` to `arr`.  
 4. Copy the sorted contents of `arr` back into `nums1`.  
-5. Finally, sort `nums1` with `Arrays.sort`, which orders the merged values.
-
-This method guarantees that `nums1` ends up containing the merged, sorted sequence, but it does not exploit the fact that the input arrays are already sorted.
+5. Finally, call `Arrays.sort(nums1)` to sort the combined array in place.  
+This method treats the merge as a two‑step process: concatenation followed by a full sort, rather than a classic two‑pointer merge.
 
 ## Complexity  
-- **Time:** O((m + n) log(m + n)) – the dominant cost is the final sort of the combined array.  
-- **Space:** O(m + n) – an auxiliary array of the same size as the merged result is allocated.
+- **Time:** O((m + n) log(m + n)) – the dominant cost is the final `Arrays.sort` call on the combined array.  
+- **Space:** O(m + n) – an auxiliary array of size `m + n` is used to hold all elements before copying back.
 
 ## Solution (Java)
 
@@ -29,11 +28,11 @@ class Solution {
         int[] arr = new int[m+n];
         int k = 0;
 
-        for(int i = 0 ; i < nums1.length ; i++){
-            if(nums1[i] != 0){
+        for(int i = 0 ; i < m ; i++){
+            
                 arr[k] = nums1[i];
                 k++;
-            }
+            
         }
         for(int i = 0 ; i < nums2.length ; i++){
             arr[k] = nums2[i];
@@ -49,6 +48,6 @@ class Solution {
 
 ---
 
-**Runtime** 4 ms (beats 15.1%) · **Memory** 43.8 MB (beats 54.4%)
+**Runtime** 4 ms (beats 15.1%) · **Memory** 43.7 MB (beats 68.0%)
 
 <sub>Synced by AILeetHub on 2026-10-28.</sub>

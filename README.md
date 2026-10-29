@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**137 problems solved**
+**138 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 112  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 113  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -120,6 +120,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 1822 | [Sign of the Product of an Array](Math/1822-sign-of-the-product-of-an-array/) | Easy | Math | Java |
 | 1832 | [Check if the Sentence Is Pangram](Hash%20Table/1832-check-if-the-sentence-is-pangram/) | Easy | Hash Table | Java |
 | 1855 | [Maximum Distance Between a Pair of Values](Two%20Pointers/1855-maximum-distance-between-a-pair-of-values/) | Medium | Two Pointers | java |
+| 1897 | [Redistribute Characters to Make All Strings Equal](Counting/1897-redistribute-characters-to-make-all-strings-equal/) | Easy | Counting | Java |
 | 1913 | [Maximum Product Difference Between Two Pairs](Sorting/1913-maximum-product-difference-between-two-pairs/) | Easy | Sorting | Java |
 | 1920 | [Build Array from Permutation](Simulation/1920-build-array-from-permutation/) | Easy | Simulation | Java |
 | 1929 | [Concatenation of Array](Simulation/1929-concatenation-of-array/) | Easy | Simulation | Java |

@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**136 problems solved**
+**137 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 111  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 112  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -64,6 +64,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 283 | [Move Zeroes](Two%20Pointers/0283-move-zeroes/) | Easy | Two Pointers | Java |
 | 344 | [Reverse String](Two%20Pointers/0344-reverse-string/) | Easy | Two Pointers | Java |
 | 349 | [Intersection of Two Arrays](Two%20Pointers/0349-intersection-of-two-arrays/) | Easy | Two Pointers | java |
+| 383 | [Ransom Note](Counting/0383-ransom-note/) | Easy | Counting | Java |
 | 387 | [First Unique Character in a String](Counting/0387-first-unique-character-in-a-string/) | Easy | Counting | Java |
 | 412 | [Fizz Buzz](Math/0412-fizz-buzz/) | Easy | Math | Java |
 | 414 | [Third Maximum Number](Sorting/0414-third-maximum-number/) | Easy | Sorting | Java |

@@ -38,7 +38,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 88 | [Merge Sorted Array](Two%20Pointers/0088-merge-sorted-array/) | Easy | Two Pointers | Java |
 | 121 | [Best Time to Buy and Sell Stock](Dynamic%20Programming/0121-best-time-to-buy-and-sell-stock/) | Easy | Dynamic Programming | java |
 | 125 | [Valid Palindrome](Two%20Pointers/0125-valid-palindrome/) | Easy | Two Pointers | java |
-| 136 | [Single Number](Bit%20Manipulation/0136-single-number/) | Easy | Bit Manipulation | java |
+| 136 | [Single Number](Bit%20Manipulation/0136-single-number/) | Easy | Bit Manipulation | Java |
 | 141 | [Linked List Cycle](Two%20Pointers/0141-linked-list-cycle/) | Easy | Two Pointers | c |
 | 155 | [Min Stack](Design/0155-min-stack/) | Medium | Design | java |
 | 160 | [Intersection of Two Linked Lists](Two%20Pointers/0160-intersection-of-two-linked-lists/) | Easy | Two Pointers | c |

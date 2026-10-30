@@ -1,12 +1,16 @@
 class Solution {
     public int missingNumber(int[] nums) {
-        int n = nums.length;
-        int ExpectedSum = (n*(n+1))/2;
+        HashMap<Integer , Integer> map = new HashMap<>();
 
-        int ActualSum = 0;
-        for(int num:nums){
-            ActualSum = ActualSum + num;
-        } 
-        return ExpectedSum - ActualSum;
+        for(int i = 0 ; i < nums.length ; i++){
+            map.put(nums[i] , map.getOrDefault(nums[i] , 0) + 1);
+        }
+
+        for(int i = 0 ; i <=nums.length ; i++){
+            if(!map.containsKey(i)){
+                return i;
+            }
+        }
+        return -1;
     }
 }

@@ -60,7 +60,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 234 | [Palindrome Linked List](Two%20Pointers/0234-palindrome-linked-list/) | Easy | Two Pointers | c |
 | 237 | [Delete Node in a Linked List](Linked%20List/0237-delete-node-in-a-linked-list/) | Medium | Linked List | c |
 | 242 | [Valid Anagram](Sorting/0242-valid-anagram/) | Easy | Sorting | Java |
-| 268 | [Missing Number](Binary%20Search/0268-missing-number/) | Easy | Binary Search | java |
+| 268 | [Missing Number](Binary%20Search/0268-missing-number/) | Easy | Binary Search | Java |
 | 283 | [Move Zeroes](Two%20Pointers/0283-move-zeroes/) | Easy | Two Pointers | Java |
 | 344 | [Reverse String](Two%20Pointers/0344-reverse-string/) | Easy | Two Pointers | Java |
 | 349 | [Intersection of Two Arrays](Two%20Pointers/0349-intersection-of-two-arrays/) | Easy | Two Pointers | java |

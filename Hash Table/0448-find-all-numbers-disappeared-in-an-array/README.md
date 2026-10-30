@@ -5,43 +5,46 @@
 `Array` · `Hash Table`
 
 ## Intuition
-The task is to identify which numbers from 1 to *n* are absent in the given array.  
-If we can quickly check whether a particular number exists in the array, we can simply iterate through the range 1…*n* and collect the missing ones.
+The array contains numbers from 1 to *n*, but some are missing.  
+If we know which values appear, the missing ones are simply the numbers that never show up.
 
 ## Approach
-1. **Build a set of all values** – Iterate over the input array once, inserting each element into a `HashSet`.  
-2. **Find missing numbers** – Loop from 1 to `nums.length`. For each integer `i`, test `set.contains(i)`. If the test fails, `i` is missing and is appended to the result list.  
-3. **Return the list** – The list now contains every integer in the range that did not appear in the original array.
+1. **Count occurrences** – Iterate over `nums` and store each value in a `HashMap<Integer,Integer>`.  
+   The key is the number, the value is its frequency (unused beyond existence).  
+2. **Identify missing numbers** – Loop from 1 to `nums.length`.  
+   For each `i`, if the map does **not** contain `i`, add `i` to the result list.  
+3. Return the list of missing numbers.
 
-This two‑pass strategy uses the hash set for O(1) membership checks, ensuring that the second pass runs in linear time.
+The algorithm uses the map only to test presence; the frequency count is unnecessary but follows the given implementation.
 
 ## Complexity
-- **Time:** O(n) – one pass to fill the set and another pass over 1…n.  
-- **Space:** O(n) – the hash set stores up to *n* elements, proportional to the input size.
+- **Time:** O(n) – one pass to build the map and another pass to check each number from 1 to *n*.  
+- **Space:** O(n) – the map stores up to *n* keys, plus the output list.
 
-## Solution (java)
+## Solution (Java)
 
 ```java
 class Solution {
     public List<Integer> findDisappearedNumbers(int[] nums) {
-        Set<Integer> set = new HashSet<>();
-        List<Integer> result = new ArrayList<>();
-
-        for(int num:nums){
-            set.add(num);
+        HashMap<Integer , Integer> map = new HashMap<>();
+        List<Integer> arr = new ArrayList<>();
+        
+        for(int i = 0 ; i < nums.length ; i++){
+            map.put(nums[i] , map.getOrDefault(nums[i] , 0) + 1);
         }
-        for(int i = 1; i<=nums.length; i++){
-            if(!set.contains(i)){
-                result.add(i);
+        for(int i = 1 ; i <=nums.length ; i++){
+            if(!map.containsKey(i)){
+                arr.add(i);
             }
         }
-        return result;
+        return arr;
+
     }
 }
 ```
 
 ---
 
-**Runtime** 20 ms · **Memory** 74.5 MB
+**Runtime** 29 ms (beats 5.1%) · **Memory** 74.8 MB (beats 6.6%)
 
-<sub>Synced by AILeetHub on 2026-02-20.</sub>
+<sub>Synced by AILeetHub on 2026-10-30.</sub>

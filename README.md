@@ -69,7 +69,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 412 | [Fizz Buzz](Math/0412-fizz-buzz/) | Easy | Math | Java |
 | 414 | [Third Maximum Number](Sorting/0414-third-maximum-number/) | Easy | Sorting | Java |
 | 424 | [Longest Repeating Character Replacement](Sliding%20Window/0424-longest-repeating-character-replacement/) | Medium | Sliding Window | java |
-| 448 | [Find All Numbers Disappeared in an Array](Hash%20Table/0448-find-all-numbers-disappeared-in-an-array/) | Easy | Hash Table | java |
+| 448 | [Find All Numbers Disappeared in an Array](Hash%20Table/0448-find-all-numbers-disappeared-in-an-array/) | Easy | Hash Table | Java |
 | 485 | [Max Consecutive Ones](Array/0485-max-consecutive-ones/) | Easy | Array | Java |
 | 509 | [Fibonacci Number](Dynamic%20Programming/0509-fibonacci-number/) | Easy | Dynamic Programming | Java |
 | 561 | [Array Partition](Greedy/0561-array-partition/) | Easy | Greedy | java |

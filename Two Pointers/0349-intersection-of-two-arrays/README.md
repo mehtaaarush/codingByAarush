@@ -5,20 +5,23 @@
 `Array` · `Hash Table` · `Two Pointers` · `Binary Search` · `Sorting`
 
 ## Intuition
-The intersection of two arrays consists of all values that appear in both lists.  
-Because the result must contain each value only once, a set is a natural data structure to deduplicate automatically while collecting matches.
+The intersection of two arrays is the set of values that appear in both.  
+Because duplicates are ignored in the result, a hash‑based set naturally removes them while we collect matches.
 
 ## Approach
-The solution iterates over every element of `nums1` and, for each one, scans the entire `nums2`.  
-Whenever a pair of equal elements is found, the value is inserted into a `HashSet`.  
-After both loops finish, the set contains every distinct number that appears in both arrays.  
-Finally, the set is copied into a new integer array, which is returned.
+1. Create an empty `HashSet<Integer>` to store unique intersection elements.  
+2. Iterate over every element `x` in `nums1`.  
+   * For each `x`, iterate over every element `y` in `nums2`.  
+   * If `x == y`, add `x` to the set.  
+3. After both loops finish, the set contains all distinct values present in both arrays.  
+4. Convert the set into an `int[]` by iterating over the set and copying each element into a new array.  
+5. Return the array.
 
-This straightforward double‑loop guarantees that all possible pairs are examined, and the set ensures uniqueness without extra checks.
+The nested loops guarantee that every pair of elements is compared, so any common value is detected. The set ensures that each common value appears only once in the final result.
 
 ## Complexity
 - **Time:** O(n × m) – each element of `nums1` is compared with every element of `nums2`.  
-- **Space:** O(min(n, m)) – the set stores at most the smaller array’s distinct elements, and the result array has the same size.
+- **Space:** O(k) – the set holds at most `k = min(n, m)` distinct intersection elements, and the output array has the same size.
 
 ## Solution (Java)
 
@@ -47,6 +50,6 @@ class Solution {
 
 ---
 
-**Runtime** 7 ms (beats 14.0%) · **Memory** 44.1 MB (beats 97.6%)
+**Runtime** 7 ms (beats 14.0%) · **Memory** 44.4 MB (beats 93.2%)
 
 <sub>Synced by AILeetHub on 2026-10-31.</sub>

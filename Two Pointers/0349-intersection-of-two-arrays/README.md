@@ -4,24 +4,21 @@
 
 `Array` · `Hash Table` · `Two Pointers` · `Binary Search` · `Sorting`
 
-## Intuition
-The intersection of two arrays is the set of values that appear in both.  
-Because duplicates are ignored in the result, a hash‑based set naturally removes them while we collect matches.
+## Intuition  
+The intersection consists of values that appear in both arrays.  
+Because the result must contain each value only once, a set is a natural data structure to collect matches while automatically removing duplicates.
 
-## Approach
-1. Create an empty `HashSet<Integer>` to store unique intersection elements.  
-2. Iterate over every element `x` in `nums1`.  
-   * For each `x`, iterate over every element `y` in `nums2`.  
-   * If `x == y`, add `x` to the set.  
-3. After both loops finish, the set contains all distinct values present in both arrays.  
-4. Convert the set into an `int[]` by iterating over the set and copying each element into a new array.  
-5. Return the array.
+## Approach  
+The solution iterates over every element of `nums1` and, for each, scans all elements of `nums2`.  
+Whenever a pair of equal values is found, that value is inserted into a `HashSet`.  
+After the double loop, the set holds exactly the distinct elements present in both arrays.  
+Finally, the set is copied into a new integer array, which is returned.
 
-The nested loops guarantee that every pair of elements is compared, so any common value is detected. The set ensures that each common value appears only once in the final result.
+This straightforward method guarantees that every possible pair is examined, so no intersection element is missed. The use of a set ensures uniqueness without additional checks.
 
-## Complexity
-- **Time:** O(n × m) – each element of `nums1` is compared with every element of `nums2`.  
-- **Space:** O(k) – the set holds at most `k = min(n, m)` distinct intersection elements, and the output array has the same size.
+## Complexity  
+- **Time:** O(n × m) – the nested loops compare each element of `nums1` with every element of `nums2`.  
+- **Space:** O(min(n, m)) – the hash set stores at most the smaller array’s distinct elements, which bounds the additional memory usage.
 
 ## Solution (Java)
 

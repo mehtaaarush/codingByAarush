@@ -4,51 +4,49 @@
 
 `Array` · `Hash Table` · `Two Pointers` · `Binary Search` · `Sorting`
 
-## Intuition  
-The intersection of two arrays consists of the values that appear in both.  
-Because duplicates are ignored in the result, a set is a natural data structure: it automatically removes duplicates and offers constant‑time membership checks.
+## Intuition
+The intersection of two arrays consists of all values that appear in both lists.  
+Because the result must contain each value only once, a set is a natural data structure to deduplicate automatically while collecting matches.
 
-## Approach  
-1. **Build a set from the first array** – iterate `nums1` and insert each element into `set1`.  
-2. **Collect common elements** – iterate `nums2`; for each element, if it exists in `set1`, add it to `resultSet`.  
-   `resultSet` guarantees uniqueness of the intersection.  
-3. **Convert the set to an array** – allocate an `int[]` of size `resultSet.size()` and copy each element from the set into the array.  
-4. Return the resulting array.
+## Approach
+The solution iterates over every element of `nums1` and, for each one, scans the entire `nums2`.  
+Whenever a pair of equal elements is found, the value is inserted into a `HashSet`.  
+After both loops finish, the set contains every distinct number that appears in both arrays.  
+Finally, the set is copied into a new integer array, which is returned.
 
-This two‑pass strategy uses a hash table for O(1) look‑ups, ensuring that each element of both arrays is examined only once.
+This straightforward double‑loop guarantees that all possible pairs are examined, and the set ensures uniqueness without extra checks.
 
-## Complexity  
-- **Time:** O(n + m) – one pass over `nums1` and one over `nums2`.  
-- **Space:** O(n + k) – `set1` holds up to `n` unique values, and `resultSet` holds at most `k` intersection elements (`k ≤ min(n, m)`).
+## Complexity
+- **Time:** O(n × m) – each element of `nums1` is compared with every element of `nums2`.  
+- **Space:** O(min(n, m)) – the set stores at most the smaller array’s distinct elements, and the result array has the same size.
 
-## Solution (java)
+## Solution (Java)
 
 ```java
 class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
-       HashSet<Integer> set1= new HashSet<>();
-       HashSet<Integer> resultSet = new HashSet<>();
+        HashSet<Integer> set = new HashSet<>();
+        int k = 0;
 
-       for(int num : nums1){
-        set1.add(num);
-       }
-       for(int num : nums2){
-        if(set1.contains(num)){
-            resultSet.add(num);
+        for(int i = 0 ; i < nums1.length ; i++){
+            for(int j = 0 ; j < nums2.length ; j++){
+                if(nums1[i] == nums2[j]){
+                    set.add(nums1[i]);
+                }
+            }
         }
-       }
-       int[] result = new int[resultSet.size()];
-       int i = 0;
-       for(int num : resultSet){
-        result[i++] = num;
-       }
-    return result;
-
-    }}
+        int[] arr = new int[set.size()];
+        for (int num : set) {
+            arr[k] = num;
+            k++;
+        }
+        return arr;
+    }
+}
 ```
 
 ---
 
-**Runtime** 2 ms · **Memory** 45.1 MB
+**Runtime** 7 ms (beats 14.0%) · **Memory** 44.1 MB (beats 97.6%)
 
-<sub>Synced by AILeetHub on 2026-01-30.</sub>
+<sub>Synced by AILeetHub on 2026-10-31.</sub>

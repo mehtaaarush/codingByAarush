@@ -63,7 +63,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 268 | [Missing Number](Binary%20Search/0268-missing-number/) | Easy | Binary Search | Java |
 | 283 | [Move Zeroes](Two%20Pointers/0283-move-zeroes/) | Easy | Two Pointers | Java |
 | 344 | [Reverse String](Two%20Pointers/0344-reverse-string/) | Easy | Two Pointers | Java |
-| 349 | [Intersection of Two Arrays](Two%20Pointers/0349-intersection-of-two-arrays/) | Easy | Two Pointers | java |
+| 349 | [Intersection of Two Arrays](Two%20Pointers/0349-intersection-of-two-arrays/) | Easy | Two Pointers | Java |
 | 383 | [Ransom Note](Counting/0383-ransom-note/) | Easy | Counting | Java |
 | 387 | [First Unique Character in a String](Counting/0387-first-unique-character-in-a-string/) | Easy | Counting | Java |
 | 412 | [Fizz Buzz](Math/0412-fizz-buzz/) | Easy | Math | Java |

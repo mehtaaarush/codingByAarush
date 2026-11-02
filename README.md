@@ -42,7 +42,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 141 | [Linked List Cycle](Two%20Pointers/0141-linked-list-cycle/) | Easy | Two Pointers | c |
 | 155 | [Min Stack](Design/0155-min-stack/) | Medium | Design | java |
 | 160 | [Intersection of Two Linked Lists](Two%20Pointers/0160-intersection-of-two-linked-lists/) | Easy | Two Pointers | c |
-| 167 | [Two Sum II - Input Array Is Sorted](Two%20Pointers/0167-two-sum-ii-input-array-is-sorted/) | Medium | Two Pointers | java |
+| 167 | [Two Sum II - Input Array Is Sorted](Two%20Pointers/0167-two-sum-ii-input-array-is-sorted/) | Medium | Two Pointers | Java |
 | 169 | [Majority Element](Divide%20and%20Conquer/0169-majority-element/) | Easy | Divide and Conquer | Java |
 | 175 | [Combine Two Tables](Database/0175-combine-two-tables/) | Easy | Database | mysql |
 | 181 | [Employees Earning More Than Their Managers](Database/0181-employees-earning-more-than-their-managers/) | Easy | Database | mysql |

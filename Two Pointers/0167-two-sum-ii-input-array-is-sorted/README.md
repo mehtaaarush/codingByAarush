@@ -4,17 +4,23 @@
 
 `Array` · `Two Pointers` · `Binary Search`
 
-## Approach
+## Intuition  
+Because the input array is sorted, any pair that sums to the target must consist of one element from the left side and one from the right side. Moving the left pointer rightwards increases the sum, while moving the right pointer leftwards decreases it. This monotonic behavior allows us to discard large portions of the search space in a single pass.
 
-Accepted medium solution in java.
-Relevant topics: Array, Two Pointers, Binary Search.
+## Approach  
+1. Initialize two indices: `left` at the first element and `right` at the last.  
+2. While `left < right`:  
+   * Compute `sum = numbers[left] + numbers[right]`.  
+   * If `sum` equals the target, return `[left + 1, right + 1]` (indices are 1‑based).  
+   * If `sum` is less than the target, increment `left` to increase the sum.  
+   * If `sum` is greater than the target, decrement `right` to decrease the sum.  
+3. The loop guarantees that the unique solution is found; otherwise an empty array is returned (though the problem guarantees a solution).
 
-## Complexity
+## Complexity  
+- **Time:** O(n) – each iteration moves one pointer closer to the other, so at most `n` steps.  
+- **Space:** O(1) – only a few integer variables are used regardless of input size.
 
-- **Time:** _not analysed_
-- **Space:** _not analysed_
-
-## Solution (java)
+## Solution (Java)
 
 ```java
 class Solution {
@@ -22,27 +28,24 @@ class Solution {
         int left = 0;
         int right = numbers.length - 1;
 
-        while(left < right) {
+        while (left < right){
             int sum = numbers[left] + numbers[right];
 
-            if(sum == target) {
+            if (sum == target){
                 return new int[]{left + 1, right + 1};
-            }
-            else if(sum < target) {
+            }else if (sum < target){
                 left++;
-            }
-            else {
+            }else{
                 right--;
             }
         }
-
-        return new int[]{-1, -1};
+        return new int[]{};
     }
 }
 ```
 
 ---
 
-**Runtime** 2 ms · **Memory** 48.2 MB
+**Runtime** 2 ms (beats 97.4%) · **Memory** 47.8 MB (beats 91.4%)
 
-<sub>Synced by AILeetHub on 2026-03-01.</sub>
+<sub>Synced by AILeetHub on 2026-11-02.</sub>

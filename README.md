@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**142 problems solved**
+**143 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 117  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 118  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -67,6 +67,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 350 | [Intersection of Two Arrays II](Two%20Pointers/0350-intersection-of-two-arrays-ii/) | Easy | Two Pointers | Java |
 | 383 | [Ransom Note](Counting/0383-ransom-note/) | Easy | Counting | Java |
 | 387 | [First Unique Character in a String](Counting/0387-first-unique-character-in-a-string/) | Easy | Counting | Java |
+| 392 | [Is Subsequence](Dynamic%20Programming/0392-is-subsequence/) | Easy | Dynamic Programming | Java |
 | 412 | [Fizz Buzz](Math/0412-fizz-buzz/) | Easy | Math | Java |
 | 414 | [Third Maximum Number](Sorting/0414-third-maximum-number/) | Easy | Sorting | Java |
 | 424 | [Longest Repeating Character Replacement](Sliding%20Window/0424-longest-repeating-character-replacement/) | Medium | Sliding Window | java |

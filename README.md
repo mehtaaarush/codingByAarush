@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**141 problems solved**
+**142 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 116  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 117  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 24  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -86,6 +86,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 867 | [Transpose Matrix](Simulation/0867-transpose-matrix/) | Easy | Simulation | java |
 | 876 | [Middle of the Linked List](Two%20Pointers/0876-middle-of-the-linked-list/) | Easy | Two Pointers | c |
 | 877 | [Stone Game](Dynamic%20Programming/0877-stone-game/) | Medium | Dynamic Programming | Java |
+| 905 | [Sort Array By Parity](Two%20Pointers/0905-sort-array-by-parity/) | Easy | Two Pointers | Java |
 | 922 | [Sort Array By Parity II](Two%20Pointers/0922-sort-array-by-parity-ii/) | Easy | Two Pointers | Java |
 | 977 | [Squares of a Sorted Array](Two%20Pointers/0977-squares-of-a-sorted-array/) | Easy | Two Pointers | Java |
 | 989 | [Add to Array-Form of Integer](Math/0989-add-to-array-form-of-integer/) | Easy | Math | java |

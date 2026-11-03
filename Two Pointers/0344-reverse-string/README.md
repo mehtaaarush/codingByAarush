@@ -4,15 +4,19 @@
 
 `Two Pointers` · `String`
 
-## Intuition
-Reversing a sequence can be done by exchanging elements that are symmetric around the center. By swapping the first and last characters, then the second and second‑last, and so on, the array is transformed in place without needing extra storage.
+## Intuition  
+Reversing a string in place means swapping characters from the two ends and moving inward until the middle is reached. By exchanging the first and last characters, then the second and second‑last, and so on, the array is reversed without needing extra storage.
 
-## Approach
-The implementation uses two indices, `left` and `right`. `left` starts at 0 and `right` starts at `s.length - 1`. While `left` is strictly less than `right`, the characters at these positions are swapped using a temporary variable. After each swap, `left` is incremented and `right` decremented, moving the pointers toward the middle. The loop stops when the pointers meet or cross, guaranteeing that every pair of characters has been exchanged exactly once. No additional data structures are created; the only extra space is the temporary variable for the swap.
+## Approach  
+1. Initialize two pointers: `left` at the start (index 0) and `right` at the end (`s.length - 1`).  
+2. While `left < right`, swap `s[left]` and `s[right]`.  
+3. Increment `left` and decrement `right` to move toward the center.  
+4. Continue until the pointers cross, at which point the array is fully reversed.  
+The algorithm modifies the input array directly and terminates when all necessary swaps are performed.
 
-## Complexity
-- **Time:** O(n) – the loop runs n/2 iterations, each performing a constant‑time swap, where n is the array length.
-- **Space:** O(1) – only a few integer indices and a single temporary character are used, independent of n.
+## Complexity  
+- **Time:** O(n) – each of the n characters is visited at most once during the swap loop.  
+- **Space:** O(1) – only a constant number of variables (`left`, `right`, and a temporary `char`) are used, regardless of input size.
 
 ## Solution (Java)
 
@@ -38,6 +42,6 @@ class Solution {
 
 ---
 
-**Runtime** 1 ms (beats 27.7%) · **Memory** 47.7 MB (beats 97.4%)
+**Runtime** 1 ms (beats 39.4%) · **Memory** 47.6 MB (beats 93.2%)
 
-<sub>Synced by AILeetHub on 2026-10-23.</sub>
+<sub>Synced by AILeetHub on 2026-11-03.</sub>

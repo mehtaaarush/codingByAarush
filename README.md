@@ -13,7 +13,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 3 | [Longest Substring Without Repeating Characters](Sliding%20Window/0003-longest-substring-without-repeating-characters/) | Medium | Sliding Window | java |
 | 4 | [Median of Two Sorted Arrays](Divide%20and%20Conquer/0004-median-of-two-sorted-arrays/) | Hard | Divide and Conquer | java |
 | 9 | [Palindrome Number](Math/0009-palindrome-number/) | Easy | Math | Java |
-| 11 | [Container With Most Water](Two%20Pointers/0011-container-with-most-water/) | Medium | Two Pointers | java |
+| 11 | [Container With Most Water](Two%20Pointers/0011-container-with-most-water/) | Medium | Two Pointers | Java |
 | 13 | [Roman to Integer](Math/0013-roman-to-integer/) | Easy | Math | java |
 | 14 | [Longest Common Prefix](Trie/0014-longest-common-prefix/) | Easy | Trie | java |
 | 15 | [3Sum](Two%20Pointers/0015-3sum/) | Medium | Two Pointers | java |

@@ -79,7 +79,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 584 | [Find Customer Referee](Database/0584-find-customer-referee/) | Easy | Database | mysql |
 | 595 | [Big Countries](Database/0595-big-countries/) | Easy | Database | mysql |
 | 628 | [Maximum Product of Three Numbers](Math/0628-maximum-product-of-three-numbers/) | Easy | Math | Java |
-| 643 | [Maximum Average Subarray I](Sliding%20Window/0643-maximum-average-subarray-i/) | Easy | Sliding Window | java |
+| 643 | [Maximum Average Subarray I](Sliding%20Window/0643-maximum-average-subarray-i/) | Easy | Sliding Window | Java |
 | 645 | [Set Mismatch](Bit%20Manipulation/0645-set-mismatch/) | Easy | Bit Manipulation | Java |
 | 704 | [Binary Search](Binary%20Search/0704-binary-search/) | Easy | Binary Search | java |
 | 709 | [To Lower Case](String/0709-to-lower-case/) | Easy | String | Java |

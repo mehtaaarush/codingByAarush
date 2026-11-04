@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**144 problems solved**
+**145 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 118  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 25  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 118  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 26  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -104,6 +104,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 1343 | [Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold](Sliding%20Window/1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) | Medium | Sliding Window | java |
 | 1365 | [How Many Numbers Are Smaller Than the Current Number](Sorting/1365-how-many-numbers-are-smaller-than-the-current-number/) | Easy | Sorting | java |
 | 1431 | [Kids With the Greatest Number of Candies](Array/1431-kids-with-the-greatest-number-of-candies/) | Easy | Array | Java |
+| 1456 | [Maximum Number of Vowels in a Substring of Given Length](Sliding%20Window/1456-maximum-number-of-vowels-in-a-substring-of-given-length/) | Medium | Sliding Window | Java |
 | 1464 | [Maximum Product of Two Elements in an Array](Heap%20(Priority%20Queue)/1464-maximum-product-of-two-elements-in-an-array/) | Easy | Heap (Priority Queue) | Java |
 | 1470 | [Shuffle the Array](Array/1470-shuffle-the-array/) | Easy | Array | Java |
 | 1480 | [Running Sum of 1d Array](Prefix%20Sum/1480-running-sum-of-1d-array/) | Easy | Prefix Sum | Java |

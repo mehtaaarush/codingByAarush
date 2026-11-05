@@ -5,48 +5,50 @@
 `Array` · `Binary Search` · `Sliding Window` · `Prefix Sum`
 
 ## Intuition  
-The array contains only positive numbers, so extending a subarray can only increase its sum.  
-This monotonicity allows a two‑pointer “sliding window” that expands to reach the target sum and then contracts to find the smallest possible window.
+The array contains only positive numbers, so extending the right end of a subarray can only increase its sum, while moving the left end to the right can only decrease it. This monotonicity allows a two‑pointer (sliding window) technique: grow the window until the sum meets or exceeds the target, then shrink it from the left to find the smallest window that still satisfies the condition.
 
 ## Approach  
-1. Initialise two indices, `left` at the start and `right` that will iterate through the array.  
-2. Keep a running `sum` of the current window `[left, right]`.  
-3. For each `right`, add `nums[right]` to `sum`.  
-4. While `sum` is at least `target`, the current window satisfies the requirement.  
-   * Update `minLen` with the smaller of its current value and the window length `right - left + 1`.  
-   * Shrink the window from the left by subtracting `nums[left]` from `sum` and incrementing `left`.  
-5. After the loop, if `minLen` was never updated, return `0`; otherwise return `minLen`.
+Maintain two indices, `left` and `right`, and a running `sum`.  
+1. Iterate `right` from 0 to `nums.length-1`, adding `nums[right]` to `sum`.  
+2. While `sum` is at least `target`, update the minimal length (`right - left + 1`), subtract `nums[left]` from `sum`, and increment `left` to shrink the window.  
+3. After the loop, if no window was found (`minLength` unchanged), return 0; otherwise return `minLength`.
 
-This process guarantees that every possible subarray is considered exactly once, and the window is always the smallest that ends at the current `right`.
+This ensures every element is added once and removed once, yielding an optimal linear scan.
 
 ## Complexity  
-- **Time:** O(n) – each element is added to and removed from the sum at most once.  
+- **Time:** O(n) – each element is processed at most twice (once when added, once when removed).  
 - **Space:** O(1) – only a few integer variables are used regardless of input size.
 
-## Solution (java)
+## Solution (Java)
 
 ```java
 class Solution {
     public int minSubArrayLen(int target, int[] nums) {
-        int left = 0 , sum = 0 , minLen = Integer.MAX_VALUE;
 
-        for(int right = 0 ; right < nums.length ; right++){
+        int left = 0;
+        int sum = 0;
+        int minLength = Integer.MAX_VALUE;
+
+        for(int right = 0; right < nums.length; right++){
             sum += nums[right];
-        
-        while(sum>=target){
-            minLen = Math.min(minLen, right - left + 1);
-            sum -=nums[left];
-            left++;
-        }
-        }
-        return minLen==Integer.MAX_VALUE ? 0 : minLen;
+                
+                while(sum >= target){
+                    minLength = Math.min(minLength, right - left + 1);
+                    sum -= nums[left];
+                    left++;
+                }
+            }   
 
+        if(minLength == Integer.MAX_VALUE){
+            return 0;
+        }
+        return minLength;
     }
 }
 ```
 
 ---
 
-**Runtime** 1 ms · **Memory** 61.8 MB
+**Runtime** 1 ms (beats 99.8%) · **Memory** 68.9 MB (beats 72.7%)
 
-<sub>Synced by AILeetHub on 2026-04-27.</sub>
+<sub>Synced by AILeetHub on 2026-11-05.</sub>

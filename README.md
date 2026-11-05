@@ -52,7 +52,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 198 | [House Robber](Dynamic%20Programming/0198-house-robber/) | Medium | Dynamic Programming | java |
 | 203 | [Remove Linked List Elements](Recursion/0203-remove-linked-list-elements/) | Easy | Recursion | c |
 | 206 | [Reverse Linked List](Recursion/0206-reverse-linked-list/) | Easy | Recursion | c |
-| 209 | [Minimum Size Subarray Sum](Sliding%20Window/0209-minimum-size-subarray-sum/) | Medium | Sliding Window | java |
+| 209 | [Minimum Size Subarray Sum](Sliding%20Window/0209-minimum-size-subarray-sum/) | Medium | Sliding Window | Java |
 | 217 | [Contains Duplicate](Sorting/0217-contains-duplicate/) | Easy | Sorting | Java |
 | 219 | [Contains Duplicate II](Sliding%20Window/0219-contains-duplicate-ii/) | Easy | Sliding Window | java |
 | 225 | [Implement Stack using Queues](Design/0225-implement-stack-using-queues/) | Easy | Design | c |

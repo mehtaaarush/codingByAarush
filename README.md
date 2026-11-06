@@ -47,7 +47,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 169 | [Majority Element](Divide%20and%20Conquer/0169-majority-element/) | Easy | Divide and Conquer | Java |
 | 175 | [Combine Two Tables](Database/0175-combine-two-tables/) | Easy | Database | mysql |
 | 181 | [Employees Earning More Than Their Managers](Database/0181-employees-earning-more-than-their-managers/) | Easy | Database | mysql |
-| 189 | [Rotate Array](Two%20Pointers/0189-rotate-array/) | Medium | Two Pointers | java |
+| 189 | [Rotate Array](Two%20Pointers/0189-rotate-array/) | Medium | Two Pointers | Java |
 | 191 | [Number of 1 Bits](Divide%20and%20Conquer/0191-number-of-1-bits/) | Easy | Divide and Conquer | Java |
 | 198 | [House Robber](Dynamic%20Programming/0198-house-robber/) | Medium | Dynamic Programming | java |
 | 203 | [Remove Linked List Elements](Recursion/0203-remove-linked-list-elements/) | Easy | Recursion | c |

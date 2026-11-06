@@ -5,38 +5,36 @@
 `Array` · `Dynamic Programming`
 
 ## Intuition
-The profit from buying on day *i* and selling on day *j* (j > i) equals `prices[j] – prices[i]`.  
-To maximize this difference we only need to know the smallest price seen so far when we examine each day.  
-If the current price is lower than any seen before, it becomes the new buying candidate.  
-Otherwise, selling at the current price against the best previous buying price yields a candidate profit.
+We only need one transaction, so the best profit is the maximum difference between a later price and an earlier price. While scanning the array we can keep the smallest price seen so far; any later price can be paired with that minimum to produce a candidate profit.
 
 ## Approach
-Traverse the array once, maintaining two variables:
+Traverse the array once. Maintain two variables: `minValue` (the lowest price up to the current index) and `maxProfit` (the best profit found). For each price `p`:
+1. Update `minValue` to `min(minValue, p)`.
+2. Compute `profit = p - minValue`.
+3. Update `maxProfit` to `max(maxProfit, profit)`.
 
-1. `minPrice` – the lowest price encountered up to the current index.
-2. `maxProfit` – the highest profit found so far.
-
-For each price:
-- Update `minPrice` to the smaller of itself and the current price.
-- Compute the profit if we sold today (`price – minPrice`) and update `maxProfit` if this profit is larger.
-
-After the loop, `maxProfit` holds the maximum achievable profit; if no profit is possible it remains 0.
+Because `minValue` is always the cheapest day before or on the current day, `profit` represents the best sale on day `i`. After the loop, `maxProfit` holds the maximum achievable profit; if all prices decrease, the computed profit never exceeds zero, so the algorithm naturally returns 0.
 
 ## Complexity
-- **Time:** O(n) – one pass over the price list.  
-- **Space:** O(1) – only two integer variables are used, regardless of input size.
+- **Time:** O(n) – a single pass over the price array.  
+- **Space:** O(1) – only a few integer variables are used regardless of input size.
 
-## Solution (java)
+## Solution (Java)
 
 ```java
 class Solution {
     public int maxProfit(int[] prices) {
-        int minPrice = Integer.MAX_VALUE;
-        int maxProfit = 0;
+        int maxProfit = Integer.MIN_VALUE;
+        int minValue = Integer.MAX_VALUE;
+        int buy = 0;
 
-        for(int price : prices){
-            minPrice = Math.min(minPrice,price);
-            maxProfit = Math.max(maxProfit,price - minPrice);
+        for(int i = 0 ; i < prices.length ; i++){
+            buy = prices[i];
+            minValue = Math.min(buy , minValue);
+
+            int profit = prices[i] - minValue;
+
+            maxProfit = Math.max(profit , maxProfit);
 
         }
         return maxProfit;
@@ -46,6 +44,6 @@ class Solution {
 
 ---
 
-**Runtime** 1 ms · **Memory** 94.6 MB
+**Runtime** 1 ms (beats 99.9%) · **Memory** 93.8 MB (beats 89.5%)
 
-<sub>Synced by AILeetHub on 2026-04-23.</sub>
+<sub>Synced by AILeetHub on 2026-11-06.</sub>

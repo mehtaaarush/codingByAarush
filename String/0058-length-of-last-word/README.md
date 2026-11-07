@@ -5,43 +5,42 @@
 `String`
 
 ## Intuition
-We only need the last word, so scanning from the end is enough. By first skipping any trailing spaces we land on the last non‑space character. Counting backwards until the next space (or the start) yields the length of that word.
+The last word is the final sequence of non‑space characters in the string.  
+By trimming trailing spaces we can safely split the string on single spaces and
+the last element of the resulting array will always be that word.
 
 ## Approach
-1. Start `i` at the last index of `s`.  
-2. While `i >= 0` and `s.charAt(i)` is a space, decrement `i`.  
-3. Initialize `length` to 0.  
-4. While `i >= 0` and `s.charAt(i)` is not a space, increment `length` and decrement `i`.  
-5. Return `length`.
+1. **Trim** the input string to remove leading and trailing spaces.  
+2. **Split** the trimmed string on the space character `" "`; this yields an array of words.  
+3. **Select** the last element of the array (`words[words.length - 1]`).  
+4. **Count** the characters of this word by iterating through its characters and incrementing a counter.  
+5. Return the counter as the length of the last word.
 
-Only a few integer variables are used, and the loop runs over the suffix of the string that contains the last word.
+The loop that counts characters is equivalent to `word.length()`, but it demonstrates the explicit counting process used in the solution.
 
 ## Complexity
-- **Time:** O(n) – in the worst case we scan the entire string once (no trailing spaces).  
-- **Space:** O(1) – a constant number of variables are maintained, independent of input size.
+- **Time:** O(n) – the string is trimmed, split, and each character of the last word is examined once.  
+- **Space:** O(n) – the `split` operation creates an array that can hold up to all words in the string.
 
-## Solution (java)
+## Solution (Java)
 
 ```java
 class Solution {
     public int lengthOfLastWord(String s) {
+        String[] words = s.trim().split(" ");
+        String word = words[words.length - 1];
         int length = 0;
-        int i = s.length() - 1;
 
-        while(i>=0 && s.charAt(i)==' '){
-            i--;
-        }
-        while(i>=0 && s.charAt(i)!=' '){
+        for(int i = 0 ; i < word.length() ; i++){
             length++;
-            i--;
         }
-            return length;
+        return length;
     }
 }
 ```
 
 ---
 
-**Runtime** 0 ms · **Memory** 43.1 MB
+**Runtime** 1 ms (beats 26.5%) · **Memory** 42.8 MB (beats 71.3%)
 
-<sub>Synced by AILeetHub on 2026-02-17.</sub>
+<sub>Synced by AILeetHub on 2026-11-07.</sub>

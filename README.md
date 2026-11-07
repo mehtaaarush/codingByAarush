@@ -29,7 +29,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 50 | [Pow(x, n)](Math/0050-powx-n/) | Medium | Math | cpp |
 | 53 | [Maximum Subarray](Dynamic%20Programming/0053-maximum-subarray/) | Medium | Dynamic Programming | java |
 | 54 | [Spiral Matrix](Simulation/0054-spiral-matrix/) | Medium | Simulation | java |
-| 58 | [Length of Last Word](String/0058-length-of-last-word/) | Easy | String | java |
+| 58 | [Length of Last Word](String/0058-length-of-last-word/) | Easy | String | Java |
 | 62 | [Unique Paths](Dynamic%20Programming/0062-unique-paths/) | Medium | Dynamic Programming | Java |
 | 66 | [Plus One](Math/0066-plus-one/) | Easy | Math | Java |
 | 70 | [Climbing Stairs](Dynamic%20Programming/0070-climbing-stairs/) | Easy | Dynamic Programming | java |

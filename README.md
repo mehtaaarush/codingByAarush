@@ -15,7 +15,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 9 | [Palindrome Number](Math/0009-palindrome-number/) | Easy | Math | Java |
 | 11 | [Container With Most Water](Two%20Pointers/0011-container-with-most-water/) | Medium | Two Pointers | Java |
 | 13 | [Roman to Integer](Math/0013-roman-to-integer/) | Easy | Math | java |
-| 14 | [Longest Common Prefix](Trie/0014-longest-common-prefix/) | Easy | Trie | java |
+| 14 | [Longest Common Prefix](Trie/0014-longest-common-prefix/) | Easy | Trie | Java |
 | 15 | [3Sum](Two%20Pointers/0015-3sum/) | Medium | Two Pointers | Java |
 | 20 | [Valid Parentheses](Stack/0020-valid-parentheses/) | Easy | Stack | c |
 | 21 | [Merge Two Sorted Lists](Recursion/0021-merge-two-sorted-lists/) | Easy | Recursion | c |

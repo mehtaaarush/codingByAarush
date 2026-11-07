@@ -5,47 +5,48 @@
 `Array` · `String` · `Trie`
 
 ## Intuition  
-The longest common prefix must be a prefix of the first string in the array.  
-If any character at a given position differs among the strings, the prefix ends just before that position.
+The longest common prefix must be a prefix of the first string.  
+If any other string does not start with that prefix, the common part can only be shorter.  
+Thus we can iteratively shrink the candidate prefix until it matches the start of every string.
 
 ## Approach  
-1. Handle the edge case where the input array is empty or null by returning an empty string.  
-2. Iterate over each character index `i` of the first string.  
-3. For each `i`, store the character `ch` from the first string.  
-4. Compare `ch` with the character at the same index in every other string:  
-   * If the current string is shorter than `i+1` or its character differs from `ch`, the common prefix ends at `i`.  
-   * Return the substring of the first string from 0 to `i`.  
-5. If the loop completes without a mismatch, the entire first string is the common prefix; return it.
+1. Assume the whole first string is the current prefix.  
+2. For each subsequent string, repeatedly cut off the last character of the prefix until the string starts with it.  
+3. If the prefix becomes empty at any point, there is no common prefix and we return `""`.  
+4. After all strings are processed, the remaining prefix is the longest common prefix.
+
+The algorithm uses `startsWith` to test prefix matches and `substring` to trim the prefix one character at a time.
 
 ## Complexity  
-- **Time:** O(n · m) – each of the `n` strings is examined up to the length `m` of the first string until a mismatch is found.  
-- **Space:** O(1) – only a few integer variables and a constant‑size character are used; the output string is part of the input.
+- **Time:** O(S) – each character of the prefix is examined and possibly removed at most once per string, where S is the total number of characters in all strings.  
+- **Space:** O(1) – only a few variables are used; the prefix string itself is part of the input array and no additional data structures are allocated.
 
-## Solution (java)
+## Solution (Java)
 
 ```java
 class Solution {
     public String longestCommonPrefix(String[] strs) {
-        if(strs==null || strs.length==0){
-        return "";
-        }
 
-        for(int i = 0;i<strs[0].length();i++){
-            char ch = strs[0].charAt(i);
-                for(int j = 1;j<strs.length;j++){
-                    if(i>=strs[j].length() || strs[j].charAt(i) !=ch){
-                        return strs[0].substring(0,i);
-                    }
+        String prefix = strs[0];
 
+        for (int i = 1; i < strs.length; i++) {
+
+            while (!strs[i].startsWith(prefix)) {
+                prefix = prefix.substring(0, prefix.length() - 1);
+
+                if (prefix.length() == 0) {
+                    return "";
+                }
             }
         }
-        return strs[0];
+
+        return prefix;
     }
 }
 ```
 
 ---
 
-**Runtime** 1 ms · **Memory** 43.6 MB
+**Runtime** 0 ms (beats 100.0%) · **Memory** 42.4 MB (beats 98.7%)
 
-<sub>Synced by AILeetHub on 2026-01-26.</sub>
+<sub>Synced by AILeetHub on 2026-11-07.</sub>

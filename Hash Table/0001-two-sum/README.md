@@ -4,19 +4,18 @@
 
 `Array` · `Hash Table`
 
-## Intuition
-The goal is to find two numbers whose sum equals the target.  
-Instead of checking every pair (which would be O(n²)), we can remember the numbers we have already seen and look up the required partner in constant time.
+## Intuition  
+We need two numbers that add to the target. If we could instantly know whether the required complement of the current number has already appeared, we could finish in one pass.
 
-## Approach
+## Approach  
 Traverse the array once. For each element `nums[i]` compute its complement `target - nums[i]`.  
-* If the complement is already in a hash map, the pair is found: return the stored index of the complement and the current index `i`.  
-* If not, store the current number and its index in the map.  
-Because the problem guarantees exactly one solution, the first match is the answer. The map grows at most to the size of the array, ensuring a single pass.
+* If the complement exists in a hash map, its stored index is the first element of the answer; return `[map.get(complement), i]`.  
+* If not, insert the current number and its index into the map.  
+The map holds value → index, allowing O(1) average‑time lookups. Because the problem guarantees a unique solution, the first match found is the answer.
 
-## Complexity
-- **Time:** O(n) – each element is processed once and hash‑map lookups/insertions are O(1).  
-- **Space:** O(n) – the map may store up to all elements in the worst case.
+## Complexity  
+- **Time:** O(n) – one linear scan with constant‑time hash operations.  
+- **Space:** O(n) – the hash map may store up to all array elements in the worst case.
 
 ## Solution (Java)
 
@@ -41,6 +40,6 @@ class Solution {
 
 ---
 
-**Runtime** 2 ms (beats 99.4%) · **Memory** 46.7 MB (beats 83.1%)
+**Runtime** 2 ms (beats 99.4%) · **Memory** 46.9 MB (beats 62.6%)
 
-<sub>Synced by AILeetHub on 2026-10-25.</sub>
+<sub>Synced by AILeetHub on 2026-11-08.</sub>

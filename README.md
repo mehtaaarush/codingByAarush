@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**148 problems solved**
+**149 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 120  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 27  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 121  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 27  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -51,6 +51,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 191 | [Number of 1 Bits](Divide%20and%20Conquer/0191-number-of-1-bits/) | Easy | Divide and Conquer | Java |
 | 198 | [House Robber](Dynamic%20Programming/0198-house-robber/) | Medium | Dynamic Programming | java |
 | 203 | [Remove Linked List Elements](Recursion/0203-remove-linked-list-elements/) | Easy | Recursion | c |
+| 205 | [Isomorphic Strings](Hash%20Table/0205-isomorphic-strings/) | Easy | Hash Table | Java |
 | 206 | [Reverse Linked List](Recursion/0206-reverse-linked-list/) | Easy | Recursion | c |
 | 209 | [Minimum Size Subarray Sum](Sliding%20Window/0209-minimum-size-subarray-sum/) | Medium | Sliding Window | Java |
 | 217 | [Contains Duplicate](Sorting/0217-contains-duplicate/) | Easy | Sorting | Java |

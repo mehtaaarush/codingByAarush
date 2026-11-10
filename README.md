@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**149 problems solved**
+**150 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 121  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 27  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 122  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 27  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -64,6 +64,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 242 | [Valid Anagram](Sorting/0242-valid-anagram/) | Easy | Sorting | Java |
 | 268 | [Missing Number](Binary%20Search/0268-missing-number/) | Easy | Binary Search | Java |
 | 283 | [Move Zeroes](Two%20Pointers/0283-move-zeroes/) | Easy | Two Pointers | Java |
+| 290 | [Word Pattern](Hash%20Table/0290-word-pattern/) | Easy | Hash Table | Java |
 | 344 | [Reverse String](Two%20Pointers/0344-reverse-string/) | Easy | Two Pointers | Java |
 | 349 | [Intersection of Two Arrays](Two%20Pointers/0349-intersection-of-two-arrays/) | Easy | Two Pointers | Java |
 | 350 | [Intersection of Two Arrays II](Two%20Pointers/0350-intersection-of-two-arrays-ii/) | Easy | Two Pointers | Java |

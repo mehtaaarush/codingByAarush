@@ -4,24 +4,19 @@
 
 `Array` · `Two Pointers`
 
-## Intuition  
-The goal is to keep the order of all non‑zero values while pushing every zero to the end.  
-If we scan the array once and overwrite each non‑zero element at the next free position, the relative order is preserved automatically.  
-After all non‑zeros are placed, the remaining slots must be filled with zeros.
+## Intuition
+We need to preserve the relative order of all non‑zero elements while moving every zero to the end. The simplest way is to overwrite the array as we scan it: keep a write pointer that always points to the next free slot for a non‑zero value.
 
-## Approach  
-1. Maintain a write pointer `k` starting at 0.  
-2. Iterate through the array with index `i`.  
-   * When `nums[i]` is non‑zero, assign it to `nums[k]` and increment `k`.  
-   * Zeros are ignored during this pass, so they are effectively skipped.  
-3. Once the scan finishes, `k` points to the first position that should contain a zero.  
-4. Fill the rest of the array from `k` to the end with zeros.  
+## Approach
+Traverse the array once with index `i`.  
+- If `nums[i]` is non‑zero, copy it to `nums[k]` where `k` is the current write position, then increment `k`.  
+- After the first pass, all non‑zeros occupy the first `k` positions in their original order.  
+- Finally, iterate from `k` to the end of the array, setting each slot to `0`.  
+This two‑phase process modifies the array in place and guarantees that zeros are moved to the back without disturbing the order of non‑zeros.
 
-This two‑phase process guarantees that all non‑zeros stay in their original order and all zeros are moved to the tail, all done in place.
-
-## Complexity  
-- **Time:** O(n) – a single pass to copy non‑zeros and a second pass to write zeros.  
-- **Space:** O(1) – only a few integer variables are used, independent of input size.
+## Complexity
+- **Time:** O(n) – one linear scan to copy non‑zeros and a second linear scan to fill zeros.  
+- **Space:** O(1) – only a few integer variables are used; no additional data structures.
 
 ## Solution (Java)
 
@@ -36,7 +31,7 @@ class Solution {
                 k++;
             }
         }
-        while(k < nums.length){
+        for(int i = k ; i < nums.length ; i++){
             nums[k] = 0;
             k++;
         }
@@ -46,6 +41,6 @@ class Solution {
 
 ---
 
-**Runtime** 2 ms (beats 92.3%) · **Memory** 47.3 MB (beats 90.0%)
+**Runtime** 2 ms (beats 93.7%) · **Memory** 47.2 MB (beats 84.8%)
 
-<sub>Synced by AILeetHub on 2026-10-25.</sub>
+<sub>Synced by AILeetHub on 2026-11-11.</sub>

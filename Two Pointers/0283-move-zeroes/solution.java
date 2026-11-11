@@ -8,7 +8,7 @@ class Solution {
                 k++;
             }
         }
-        while(k < nums.length){
+        for(int i = k ; i < nums.length ; i++){
             nums[k] = 0;
             k++;
         }

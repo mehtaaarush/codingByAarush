@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**150 problems solved**
+**151 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 122  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 27  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 122  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 28  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -39,6 +39,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 88 | [Merge Sorted Array](Two%20Pointers/0088-merge-sorted-array/) | Easy | Two Pointers | Java |
 | 121 | [Best Time to Buy and Sell Stock](Dynamic%20Programming/0121-best-time-to-buy-and-sell-stock/) | Easy | Dynamic Programming | Java |
 | 125 | [Valid Palindrome](Two%20Pointers/0125-valid-palindrome/) | Easy | Two Pointers | Java |
+| 128 | [Longest Consecutive Sequence](Union-Find/0128-longest-consecutive-sequence/) | Medium | Union-Find | Java |
 | 136 | [Single Number](Bit%20Manipulation/0136-single-number/) | Easy | Bit Manipulation | Java |
 | 141 | [Linked List Cycle](Two%20Pointers/0141-linked-list-cycle/) | Easy | Two Pointers | c |
 | 155 | [Min Stack](Design/0155-min-stack/) | Medium | Design | java |

@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**151 problems solved**
+**152 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 122  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 28  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 123  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 28  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -89,6 +89,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 724 | [Find Pivot Index](Prefix%20Sum/0724-find-pivot-index/) | Easy | Prefix Sum | Java |
 | 746 | [Min Cost Climbing Stairs](Dynamic%20Programming/0746-min-cost-climbing-stairs/) | Easy | Dynamic Programming | java |
 | 771 | [Jewels and Stones](Hash%20Table/0771-jewels-and-stones/) | Easy | Hash Table | Java |
+| 796 | [Rotate String](String/0796-rotate-string/) | Easy | String | Java |
 | 867 | [Transpose Matrix](Simulation/0867-transpose-matrix/) | Easy | Simulation | java |
 | 876 | [Middle of the Linked List](Two%20Pointers/0876-middle-of-the-linked-list/) | Easy | Two Pointers | c |
 | 877 | [Stone Game](Dynamic%20Programming/0877-stone-game/) | Medium | Dynamic Programming | Java |

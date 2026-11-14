@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**153 problems solved**
+**154 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 124  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 28  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 124  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 29  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -145,6 +145,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 2078 | [Two Furthest Houses With Different Colors](Greedy/2078-two-furthest-houses-with-different-colors/) | Easy | Greedy | java |
 | 2114 | [Maximum Number of Words Found in Sentences](String/2114-maximum-number-of-words-found-in-sentences/) | Easy | String | Java |
 | 2119 | [A Number After a Double Reversal](Math/2119-a-number-after-a-double-reversal/) | Easy | Math | Java |
+| 2149 | [Rearrange Array Elements by Sign](Two%20Pointers/2149-rearrange-array-elements-by-sign/) | Medium | Two Pointers | Java |
 | 2181 | [Merge Nodes in Between Zeros](Simulation/2181-merge-nodes-in-between-zeros/) | Medium | Simulation | c |
 | 2185 | [Counting Words With a Given Prefix](String/2185-counting-words-with-a-given-prefix/) | Easy | String | Java |
 | 2235 | [Add Two Integers](Math/2235-add-two-integers/) | Easy | Math | Java |

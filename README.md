@@ -27,7 +27,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 48 | [Rotate Image](Math/0048-rotate-image/) | Medium | Math | java |
 | 49 | [Group Anagrams](Sorting/0049-group-anagrams/) | Medium | Sorting | java |
 | 50 | [Pow(x, n)](Math/0050-powx-n/) | Medium | Math | cpp |
-| 53 | [Maximum Subarray](Dynamic%20Programming/0053-maximum-subarray/) | Medium | Dynamic Programming | java |
+| 53 | [Maximum Subarray](Dynamic%20Programming/0053-maximum-subarray/) | Medium | Dynamic Programming | Java |
 | 54 | [Spiral Matrix](Simulation/0054-spiral-matrix/) | Medium | Simulation | java |
 | 58 | [Length of Last Word](String/0058-length-of-last-word/) | Easy | String | Java |
 | 62 | [Unique Paths](Dynamic%20Programming/0062-unique-paths/) | Medium | Dynamic Programming | Java |

@@ -90,7 +90,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 746 | [Min Cost Climbing Stairs](Dynamic%20Programming/0746-min-cost-climbing-stairs/) | Easy | Dynamic Programming | java |
 | 771 | [Jewels and Stones](Hash%20Table/0771-jewels-and-stones/) | Easy | Hash Table | Java |
 | 796 | [Rotate String](String/0796-rotate-string/) | Easy | String | Java |
-| 867 | [Transpose Matrix](Simulation/0867-transpose-matrix/) | Easy | Simulation | java |
+| 867 | [Transpose Matrix](Simulation/0867-transpose-matrix/) | Easy | Simulation | Java |
 | 876 | [Middle of the Linked List](Two%20Pointers/0876-middle-of-the-linked-list/) | Easy | Two Pointers | c |
 | 877 | [Stone Game](Dynamic%20Programming/0877-stone-game/) | Medium | Dynamic Programming | Java |
 | 905 | [Sort Array By Parity](Two%20Pointers/0905-sort-array-by-parity/) | Easy | Two Pointers | Java |

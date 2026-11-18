@@ -4,44 +4,41 @@
 
 `Array` · `Matrix` · `Simulation`
 
-## Intuition
-Transposing swaps rows and columns, so the element at row *i*, column *j* in the original becomes row *j*, column *i* in the result. The main diagonal stays in place while off‑diagonal entries are mirrored. The most straightforward method is to allocate a new matrix with swapped dimensions and copy each element to its transposed position.
+## Intuition  
+Transposing a matrix means swapping its rows with columns. For each element at position `(i, j)` in the original matrix, the transposed matrix will have that element at position `(j, i)`. This simple index swap is all that is required; no other transformations are needed.
 
-## Approach
-1. Determine the number of rows `rows` and columns `cols` of the input.
-2. Create a new 2‑D array `transpose` of size `cols × rows`.
-3. Iterate over every cell `(i, j)` of the original matrix.
-4. Assign `transpose[j][i] = matrix[i][j]`. This places the element in the mirrored position.
-5. Return the populated `transpose` array.
+## Approach  
+The algorithm first checks for an empty input and returns an empty matrix if necessary. It then determines the dimensions of the input: `n` rows and `m` columns. A new matrix `result` of size `m × n` is allocated to hold the transposed values. Two nested loops iterate over every element of the original matrix: the outer loop runs over rows (`row` from `0` to `n-1`) and the inner loop over columns (`col` from `0` to `m-1`). Inside the inner loop, the element `matrix[row][col]` is assigned to `result[col][row]`. After all elements are processed, `result` is returned.
 
-This approach avoids in‑place swapping complexities and guarantees that each element is written exactly once.
+## Complexity  
+- **Time:** O(m × n) – each of the `m × n` elements is visited once and moved to its transposed position.  
+- **Space:** O(m × n) – a new matrix of the same total size as the input is allocated to store the result.
 
-## Complexity
-- **Time:** O(m × n) – each of the `m × n` entries is processed once in the double loop.
-- **Space:** O(m × n) – a new matrix of the same total size is allocated to hold the transposed values.
-
-## Solution (java)
+## Solution (Java)
 
 ```java
 class Solution {
     public int[][] transpose(int[][] matrix) {
-        int rows = matrix.length;
-        int columns = matrix[0].length;
+        if(matrix == null || matrix.length == 0){
+            return new int[0][0];
+        }
 
-        int[][] transpose = new int[columns][rows];
+        int n = matrix.length;
+        int m = matrix[0].length;
+        int[][] result = new int[m][n];
 
-        for(int i = 0 ; i < rows ; i++){
-            for(int j = 0 ; j < columns ; j++){
-                transpose[j][i] = matrix[i][j];
+        for(int row = 0 ; row < n ; row++){
+            for(int col = 0 ; col < m ; col++){
+                result[col][row] = matrix[row][col];
             }
         }
-        return transpose;
+        return result;
     }
 }
 ```
 
 ---
 
-**Runtime** 0 ms · **Memory** 46.4 MB
+**Runtime** 1 ms (beats 36.8%) · **Memory** 46.7 MB (beats 28.7%)
 
-<sub>Synced by AILeetHub on 2026-05-07.</sub>
+<sub>Synced by AILeetHub on 2026-11-18.</sub>

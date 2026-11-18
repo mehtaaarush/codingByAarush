@@ -24,7 +24,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 27 | [Remove Element](Two%20Pointers/0027-remove-element/) | Easy | Two Pointers | Java |
 | 28 | [Find the Index of the First Occurrence in a String](Two%20Pointers/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy | Two Pointers | java |
 | 35 | [Search Insert Position](Binary%20Search/0035-search-insert-position/) | Easy | Binary Search | java |
-| 48 | [Rotate Image](Math/0048-rotate-image/) | Medium | Math | java |
+| 48 | [Rotate Image](Math/0048-rotate-image/) | Medium | Math | Java |
 | 49 | [Group Anagrams](Sorting/0049-group-anagrams/) | Medium | Sorting | java |
 | 50 | [Pow(x, n)](Math/0050-powx-n/) | Medium | Math | cpp |
 | 53 | [Maximum Subarray](Dynamic%20Programming/0053-maximum-subarray/) | Medium | Dynamic Programming | Java |

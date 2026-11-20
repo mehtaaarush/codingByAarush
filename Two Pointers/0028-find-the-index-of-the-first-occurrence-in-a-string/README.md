@@ -4,43 +4,34 @@
 
 `Two Pointers` · `String` · `String Matching` · `Z Algorithm` · `Knuth–Morris–Pratt Algorithm` · `Boyer–Moore String-Search Algorithm`
 
-## Intuition
-The task is to locate the first position where a short pattern (`needle`) appears inside a longer text (`haystack`).  
-Because the input size is modest (≤ 10⁴), a straightforward comparison of the pattern against every possible starting position in the text is both simple and fast enough.
+## Intuition  
+The task is to find the first position where a pattern string (`needle`) appears inside a larger string (`haystack`). Since the input sizes are modest (≤ 10⁴), a straightforward linear scan is sufficient: slide a window of length `m` (the length of `needle`) over `haystack` and compare each window to `needle`. The moment a match is found, the current index is the answer.
 
-## Approach
-1. **Edge case** – if the pattern is empty, return 0 immediately.  
-2. Iterate over each index `i` in `haystack` where the pattern could start: `0 … haystack.length - needle.length`.  
-3. For each `i`, compare characters one by one: while the characters at `haystack[i + j]` and `needle[j]` match, increment `j`.  
-4. If `j` reaches the length of `needle`, a full match has been found; return the current index `i`.  
-5. If the loop finishes without a match, return `-1`.
+## Approach  
+1. Compute the lengths `n` and `m` of `haystack` and `needle`.  
+2. Iterate `i` from `0` to `n - m`.  
+3. For each `i`, extract the substring `haystack[i … i+m)` and compare it with `needle` using `String.equals`.  
+4. If they match, return `i` immediately.  
+5. If the loop completes without a match, return `-1`.  
+This is a classic brute‑force string matching algorithm that checks every possible alignment of `needle` within `haystack`.
 
-This is the classic *naïve* string‑matching algorithm, which checks each potential alignment until a mismatch occurs.
+## Complexity  
+- **Time:** O((n‑m+1) · m) – each of the at most `n‑m+1` windows requires up to `m` character comparisons.  
+- **Space:** O(1) – only a few integer variables are used; the substring operation does not allocate additional space proportional to input size.
 
-## Complexity
-- **Time:** O((n − m + 1) · m) – in the worst case we compare the pattern against every possible start position, each comparison taking up to `m` steps.  
-- **Space:** O(1) – only a few integer variables are used, independent of input size.
-
-## Solution (java)
+## Solution (Java)
 
 ```java
 class Solution {
     public int strStr(String haystack, String needle) {
-        if (needle.length() == 0) return 0;
+        int n = haystack.length();
+        int m = needle.length();
 
-        for (int i = 0; i <= haystack.length() - needle.length(); i++) {
-            int j = 0;
-
-            while (j < needle.length() && 
-                   haystack.charAt(i + j) == needle.charAt(j)) {
-                j++;
-            }
-
-            if (j == needle.length()) {
+        for(int i = 0 ; i <= n - m ; i++){
+            if(haystack.substring(i , i + m).equals(needle)){
                 return i;
             }
         }
-
         return -1;
     }
 }
@@ -48,6 +39,6 @@ class Solution {
 
 ---
 
-**Runtime** 1 ms · **Memory** 42.6 MB
+**Runtime** 1 ms (beats 55.1%) · **Memory** 42.8 MB (beats 48.9%)
 
-<sub>Synced by AILeetHub on 2026-03-04.</sub>
+<sub>Synced by AILeetHub on 2026-11-20.</sub>

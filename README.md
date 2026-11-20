@@ -22,7 +22,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 24 | [Swap Nodes in Pairs](Recursion/0024-swap-nodes-in-pairs/) | Medium | Recursion | c |
 | 26 | [Remove Duplicates from Sorted Array](Two%20Pointers/0026-remove-duplicates-from-sorted-array/) | Easy | Two Pointers | Java |
 | 27 | [Remove Element](Two%20Pointers/0027-remove-element/) | Easy | Two Pointers | Java |
-| 28 | [Find the Index of the First Occurrence in a String](Two%20Pointers/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy | Two Pointers | java |
+| 28 | [Find the Index of the First Occurrence in a String](Two%20Pointers/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy | Two Pointers | Java |
 | 35 | [Search Insert Position](Binary%20Search/0035-search-insert-position/) | Easy | Binary Search | java |
 | 48 | [Rotate Image](Math/0048-rotate-image/) | Medium | Math | Java |
 | 49 | [Group Anagrams](Sorting/0049-group-anagrams/) | Medium | Sorting | java |

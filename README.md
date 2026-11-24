@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**157 problems solved**
+**158 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 127  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 29  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 127  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 30  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -17,6 +17,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 13 | [Roman to Integer](Math/0013-roman-to-integer/) | Easy | Math | java |
 | 14 | [Longest Common Prefix](Trie/0014-longest-common-prefix/) | Easy | Trie | Java |
 | 15 | [3Sum](Two%20Pointers/0015-3sum/) | Medium | Two Pointers | Java |
+| 16 | [3Sum Closest](Two%20Pointers/0016-3sum-closest/) | Medium | Two Pointers | Java |
 | 20 | [Valid Parentheses](Stack/0020-valid-parentheses/) | Easy | Stack | c |
 | 21 | [Merge Two Sorted Lists](Recursion/0021-merge-two-sorted-lists/) | Easy | Recursion | c |
 | 24 | [Swap Nodes in Pairs](Recursion/0024-swap-nodes-in-pairs/) | Medium | Recursion | c |

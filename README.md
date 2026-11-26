@@ -3,9 +3,9 @@ LeetCode solutions, synced automatically by AILeetHub.
 
 <!-- AILEETHUB:START -->
 
-**159 problems solved**
+**160 problems solved**
 
-![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 128  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 30  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
+![Easy](https://img.shields.io/badge/Difficulty-Easy-00b8a3?style=flat-square) 129  ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat-square) 30  ![Hard](https://img.shields.io/badge/Difficulty-Hard-ff375f?style=flat-square) 1
 
 | # | Problem | Difficulty | Topic | Language |
 | --- | --- | --- | --- | --- |
@@ -167,6 +167,7 @@ LeetCode solutions, synced automatically by AILeetHub.
 | 2894 | [Divisible and Non-divisible Sums Difference](Math/2894-divisible-and-non-divisible-sums-difference/) | Easy | Math | Java |
 | 2965 | [Find Missing and Repeated Values](Math/2965-find-missing-and-repeated-values/) | Easy | Math | java |
 | 3005 | [Count Elements With Maximum Frequency](Counting/3005-count-elements-with-maximum-frequency/) | Easy | Counting | Java |
+| 3360 | [Stone Removal Game](Math/3360-stone-removal-game/) | Easy | Math | Java |
 | 3731 | [Find Missing Elements](Sorting/3731-find-missing-elements/) | Easy | Sorting | Java |
 
 <!-- AILEETHUB:END -->

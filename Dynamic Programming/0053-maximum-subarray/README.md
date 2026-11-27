@@ -5,19 +5,22 @@
 `Array` · `Divide and Conquer` · `Dynamic Programming`
 
 ## Intuition
-The maximum‑sum subarray can be built incrementally. While scanning the array, keep a running total of the current subarray. If this total ever becomes negative, it can never contribute to a larger sum later, so we discard it and start fresh from the next element. The best sum seen so far is stored separately.
+The maximum‑sum subarray can be built incrementally: as we scan the array, we keep a running total of the current subarray. If this total ever becomes negative, it can never contribute to a larger sum later, so we discard it and start fresh. The best sum seen so far is stored separately.
 
 ## Approach
-Initialize `sum` to 0 and `maxSum` to the smallest possible integer. For each element `x` in `nums`:
-1. Add `x` to `sum`.
-2. Update `maxSum` with `Math.max(sum, maxSum)`.
-3. If `sum` drops below 0, reset it to 0 because any subarray starting before this point would be worse than starting anew.
+The implementation follows Kadane’s algorithm.  
+1. Initialize `sum` to 0 and `maxSum` to the smallest integer.  
+2. Iterate through each element `nums[i]`.  
+   - Add the element to `sum`.  
+   - Update `maxSum` with the larger of `sum` and `maxSum`.  
+   - If `sum` drops below 0, reset it to 0, because any subarray starting before this point would only reduce future sums.  
+3. After the loop, `maxSum` holds the maximum subarray sum and is returned.
 
-After the loop, `maxSum` holds the largest subarray sum. This single pass handles arrays with all negative numbers because `maxSum` starts at `Integer.MIN_VALUE` and is updated before any reset.
+This single pass ensures that every possible subarray ending at each index is considered, while negative prefixes are discarded to keep the running sum as high as possible.
 
 ## Complexity
-- **Time:** O(n) – one linear scan of the array.  
-- **Space:** O(1) – only a few integer variables are used.
+- **Time:** O(n) – one linear scan over the array.  
+- **Space:** O(1) – only a few integer variables are used, regardless of input size.
 
 ## Solution (Java)
 
@@ -42,6 +45,6 @@ class Solution {
 
 ---
 
-**Runtime** 1 ms (beats 100.0%) · **Memory** 76.7 MB (beats 84.5%)
+**Runtime** 1 ms (beats 100.0%) · **Memory** 76.1 MB (beats 99.2%)
 
-<sub>Synced by AILeetHub on 2026-11-15.</sub>
+<sub>Synced by AILeetHub on 2026-11-27.</sub>
